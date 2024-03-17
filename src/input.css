@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+  @apply max-w-[1250px] mx-auto px-5;
+}
+
+.text-primary {
+  color: #83b735;
+}
+.bg-primary {
+  background-color: #83b735;
+}
