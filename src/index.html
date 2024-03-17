@@ -107,8 +107,8 @@
       </nav>
     </header>
     <!-- top category   -->
-    <div class="border-t-[2px] relative shadow-md border-[#0000001d]">
-      <div class="container flex items-center justify-between gap-2">
+    <div class="border-y-[2px] shadow-md border-[#0000001d]">
+      <div class="container flex relative items-center justify-between gap-2">
         <div class="flex items-center gap-4">
           <div
             class="bg-primary flex items-center w-[300px] justify-between text-white px-3 py-4"
@@ -120,61 +120,832 @@
             <i class="fa-solid text-[20px] fa-angle-down"></i>
           </div>
           <div>
-            <ul class="flex items-center gap-5">
-              <li class="text-primary text-[14px] lg:text-[18px] uppercase">
+            <!-- page link  -->
+            <ul class="flex items-center gap-7">
+              <li
+                class="text-primary font-semibold text-[14px] lg:text-[18px] uppercase"
+              >
                 <a href="">Home </a>
               </li>
               <li
-                class="text-[14px] group hover:text-[#83b735] duration-300 lg:text-[18px] uppercase"
+                class="text-[14px] group text-hover duration-300 lg:text-[18px] uppercase"
               >
-                <a href="">Shop</a>
+                <a href="" class="font-semibold">Shop</a>
+                <!-- shop modal  -->
                 <div
-                  class="hidden text-gray-700 group-hover:block absolute top-10 z-40 bg-white p-4"
+                  class="hidden capitalize text-gray-700 group-hover:block absolute top-10 z-[100] bg-white"
                 >
-                  <div>
-                    <h1 class="text-[18px] font-semibold uppercase">
-                      SHOP LAYOUTS
-                    </h1>
-                    <ul>
-                      <li>Filters area</li>
-                      <li>Hidden sidebar</li>
-                      <li>HOT No page</li>
-                      <li>heading</li>
-                      <li>Small categories</li>
-                      <li>menu</li>
-                      <li>Products list</li>
-                      <li>view With background</li>
-                      <li>Category</li>
-                      <li>description Only</li>
-                      <li>categories Header</li>
-                      <li>overlap Infinit</li>
-                      <li>scrolling</li>
-                      <li>Load more button</li>
-                    </ul>
+                  <div class="grid grid-cols-3 gap-8">
+                    <div class="p-6">
+                      <h1 class="text-[18px] pt-4 font-semibold uppercase">
+                        SHOP LAYOUTS
+                      </h1>
+                      <ul class="space-y-3 mt-4">
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Filters area</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href=""> Hidden sidebar</a>
+                        </li>
+
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Small categories</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">menu</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Products list</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href=""> view With background</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Category</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">description Only</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">categories Header</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href=""> overlap Infinit</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">scrolling</a>
+                        </li>
+                        <li class="text-[14px] font-normal">
+                          <a href="">Load more button</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="p-6">
+                      <h1 class="text-[18px] pt-4 font-semibold uppercase">
+                        CUSTOM LAYOUTS
+                      </h1>
+                      <ul class="space-y-3 mt-4">
+                        <li class="text-[14px] font-normal">
+                          <a href="">Post example 1#</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Post example 2#</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Post example 3#</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Post example 5#</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Post example 5#</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Post example 6#</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Post example 7#</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Post example 8#</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Post example 9#</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Post example 10#</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Post example 1#</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Post example 1#</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="bg-[#F6F6F6] text-center p-6">
+                      <div class="">
+                        <div class="max-h-[350px]">
+                          <img
+                            class="w-full h-full"
+                            src="https://woodmart.b-cdn.net/wp-content/uploads/2023/04/advanced-variable-products-with-swatches.png.webp"
+                            alt=""
+                          />
+                        </div>
+                        <h1 class="text-[18px] font-medium py-3">
+                          Advanced Variable products with swatches
+                        </h1>
+                        <p class="text-[14px]">
+                          Products variations colors and images without any
+                          additional plugins.
+                        </p>
+                        <button
+                          class="bg-primary text-white my-4 px-10 py-2 rounded-[20px] text-[19px] font-medium"
+                        >
+                          View more
+                        </button>
+                      </div>
+                    </div>
                   </div>
-                  <div></div>
-                  <div></div>
                 </div>
               </li>
               <li
-                class="text-[14px] hover:text-[#83b735] duration-300 lg:text-[18px] uppercase"
+                class="text-[14px] group text-hover duration-300 lg:text-[18px] uppercase"
               >
-                <a href=""> Blog</a>
+                <!-- Blog  modal  -->
+                <a href="" class="font-semibold"> Blog</a>
+                <div
+                  class="hidden capitalize text-gray-700 group-hover:block absolute top-10 z-[100] bg-white"
+                >
+                  <div class="grid grid-cols-3 gap-8">
+                    <div class="p-6">
+                      <h1 class="text-[18px] pt-4 font-semibold uppercase">
+                        BLOG TYPES
+                      </h1>
+                      <ul class="space-y-3 mt-4">
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Alternative</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Small images</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Blog chess</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Masonry grid</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Meta on image</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">FEATURE</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Category</a>
+                        </li>
+
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href=""> overlap Infinit</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Blog flat</a>
+                        </li>
+                        <li class="text-[14px] font-normal">
+                          <a href="">Blog mask</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="p-6">
+                      <h1 class="text-[18px] pt-4 font-semibold uppercase">
+                        SINGLE POSTS
+                      </h1>
+                      <ul class="space-y-3 mt-4">
+                        <li class="text-[14px] font-normal">
+                          <a href="">Post example 1#</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Post example 2#</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Post example 3#</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Post example 5#</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Post example 5#</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Post example 6#</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Post example 7#</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Post example 8#</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Post example 9#</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Post example 10#</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="bg-[#F6F6F6] p-6">
+                      <h1 class="text-[18px] font-medium py-3">RECENT POSTS</h1>
+                      <div class="space-y-3">
+                        <div
+                          class="flex items-center border-b border-[#0000001d] gap-3 py-1"
+                        >
+                          <div class="w-[90px] h-[70px]">
+                            <img
+                              class="w-full h-full"
+                              src="https://woodmart.xtemos.com/wp-content/uploads/2016/07/blog-12-75x65.jpg"
+                              alt=""
+                            />
+                          </div>
+                          <div>
+                            <h3 class="text-[14px]">
+                              A companion for extra sleeping
+                            </h3>
+                            <span class="text-[14px] opacity-60"
+                              >July 23, 2016 1 Comment</span
+                            >
+                          </div>
+                        </div>
+                        <div
+                          class="flex items-center border-b border-[#0000001d] gap-3 py-1"
+                        >
+                          <div class="w-[90px] h-[70px]">
+                            <img
+                              class="w-full h-full"
+                              src="https://woodmart.xtemos.com/wp-content/uploads/2016/07/blog-11-75x65.jpg"
+                              alt=""
+                            />
+                          </div>
+                          <div>
+                            <h3 class="text-[14px]">
+                              A companion for extra sleeping
+                            </h3>
+                            <span class="text-[14px] opacity-60"
+                              >July 23, 2016 1 Comment</span
+                            >
+                          </div>
+                        </div>
+                        <div
+                          class="flex items-center border-b border-[#0000001d] gap-3 py-1"
+                        >
+                          <div class="w-[90px] h-[70px]">
+                            <img
+                              class="w-full h-full"
+                              src="https://woodmart.xtemos.com/wp-content/uploads/2016/07/blog-17-75x65.jpg"
+                              alt=""
+                            />
+                          </div>
+                          <div>
+                            <h3 class="text-[14px]">
+                              A companion for extra sleeping
+                            </h3>
+                            <span class="text-[14px] opacity-60"
+                              >July 23, 2016 1 Comment</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </li>
               <li
-                class="text-[14px] hover:text-[#83b735] duration-300 lg:text-[18px] uppercase"
+                class="text-[14px] group text-hover duration-300 lg:text-[18px] uppercase"
               >
-                <a href=""> Pages</a>
+                <!-- Pages modal  -->
+                <a href="" class="font-semibold"> Pages</a>
+                <div
+                  class="hidden capitalize text-gray-700 lg:w-[70%] group-hover:block absolute top-10 z-[100] bg-white"
+                >
+                  <div class="grid grid-cols-4 w-full gap-8 p-6">
+                    <div class="">
+                      <h1 class="text-[18px] pt-4 font-semibold uppercase">
+                        DEMO LAYOUTS
+                      </h1>
+                      <ul class="space-y-3 mt-4">
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Categories</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Basic</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Parallax</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Infinite</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Scrolling</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Video </a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href=""> Lookbook </a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href=""> Video </a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href=""> Landing </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="">
+                      <h1 class="text-[18px] pt-4 font-semibold uppercase">
+                        PRE-BUILT PAGE
+                      </h1>
+                      <ul class="space-y-3 mt-4">
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Alternative</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Small images</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Blog chess</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Masonry grid</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Meta on image</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">FEATURE</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Category</a>
+                        </li>
+
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href=""> overlap Infinit</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Blog flat</a>
+                        </li>
+                        <li class="text-[14px] font-normal">
+                          <a href="">Blog mask</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="">
+                      <h1 class="text-[18px] pt-4 font-semibold uppercase">
+                        Portfolio
+                      </h1>
+                      <ul class="space-y-3 mt-4">
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Alternative</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Small images</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Blog chess</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Masonry grid</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Meta on image</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">FEATURE</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Category</a>
+                        </li>
+
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href=""> overlap Infinit</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Blog flat</a>
+                        </li>
+                        <li class="text-[14px] font-normal">
+                          <a href="">Blog mask</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="">
+                      <h1 class="text-[18px] pt-4 font-semibold uppercase">
+                        HEADERS
+                      </h1>
+                      <ul class="space-y-3 mt-4">
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Alternative</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Small images</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Blog chess</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Masonry grid</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Meta on image</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">FEATURE</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Category</a>
+                        </li>
+
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href=""> overlap Infinit</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Blog flat</a>
+                        </li>
+                        <li class="text-[14px] font-normal">
+                          <a href="">Blog mask</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </li>
               <li
-                class="text-[14px] hover:text-[#83b735] duration-300 lg:text-[18px] uppercase"
+                class="text-[14px] group text-hover duration-300 lg:text-[18px] uppercase"
               >
-                <a href=""> Element</a>
+                <!-- Element  page  -->
+                <a href="" class="font-semibold"> Element</a>
+                <div
+                  class="hidden capitalize text-gray-700 lg:w-[70%] group-hover:block absolute top-10 z-[100] bg-white"
+                >
+                  <div class="grid grid-cols-4 w-full gap-8 p-6">
+                    <div class="">
+                      <h1 class="text-[18px] pt-4 font-semibold uppercase">
+                        <a href="">THEME ELEMENTS</a>
+                      </h1>
+                      <ul class="space-y-3 mt-4">
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Categories</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Basic</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Parallax</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Infinite</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Scrolling</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Video </a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href=""> Lookbook </a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href=""> Video </a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href=""> Landing </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="">
+                      <h1 class="text-[18px] pt-4 font-semibold uppercase">
+                        <a href="">THEME ELEMENTS</a>
+                      </h1>
+                      <ul class="space-y-3 mt-4">
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Alternative</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Small images</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Blog chess</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Masonry grid</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Meta on image</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">FEATURE</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Category</a>
+                        </li>
+
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href=""> overlap Infinit</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Blog flat</a>
+                        </li>
+                        <li class="text-[14px] font-normal">
+                          <a href="">Blog mask</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="">
+                      <h1 class="text-[18px] pt-4 font-semibold uppercase">
+                        <a href="">THEME ELEMENTS</a>
+                      </h1>
+                      <ul class="space-y-3 mt-4">
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Alternative</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Small images</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Blog chess</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Masonry grid</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Meta on image</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">FEATURE</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Category</a>
+                        </li>
+
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href=""> overlap Infinit</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Blog flat</a>
+                        </li>
+                        <li class="text-[14px] font-normal">
+                          <a href="">Blog mask</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="">
+                      <h1 class="text-[18px] pt-4 font-semibold uppercase">
+                        <a href="">WOOCOMMERCE</a>
+                      </h1>
+                      <ul class="space-y-3 mt-4">
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Alternative</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Small images</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Blog chess</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Masonry grid</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Meta on image</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">FEATURE</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Category</a>
+                        </li>
+
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href=""> overlap Infinit</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Blog flat</a>
+                        </li>
+                        <li class="text-[14px] font-normal">
+                          <a href="">Blog mask</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </li>
               <li
-                class="text-[14px] hover:text-[#83b735] duration-300 lg:text-[18px] uppercase"
+                class="text-[14px] text-hover duration-300 lg:text-[18px] uppercase"
               >
-                <a href=""> Buy</a>
+                <a href="" class="font-semibold"> Buy</a>
               </li>
             </ul>
           </div>
@@ -189,16 +960,16 @@
     <!-- hero section  -->
 
     <div class="relative group bg-[#F8F8F8]">
-      <div class="container">
+      <div class="container relative">
         <!-- slider section  -->
         <div class="grid grid-cols-8">
           <div class="col-span-2 z-50 relative">
             <div
-              class="max-w-[300px] space-y-3 h-full text-gray-700 bg-white py-2"
+              class="max-w-[300px] h-full text-gray-700 border border-gray-300 bg-white"
             >
               <!-- Furniture item  -->
               <div
-                class="flex justify-between items-center border-b px-3 py-1 border-gray-300 cursor-pointer gap-2"
+                class="group/item flex justify-between pt-3 bg-hover items-center border-b px-3 py-1 border-gray-300 cursor-pointer gap-2"
               >
                 <div class="flex items-center gap-2">
                   <span class="text-[14px] lg:text-[20px]">
@@ -207,10 +978,157 @@
                   <span class="capitalize">Furniture</span>
                 </div>
                 <i class="fa-solid fa-angle-right"></i>
+                <div
+                  class="hidden absolute left-[300px] group-hover/item:block bg-white w-[1000px] top-0 p-6 h-full"
+                >
+                  <!-- Furniture product  modal  -->
+                  <div class="grid grid-cols-4 gap-4">
+                    <div>
+                      <img
+                        src="https://woodmart.xtemos.com/wp-content/uploads/2017/01/menu-product-1-118x118.jpg"
+                        alt=""
+                      />
+
+                      <h1 class="text-[15px] font-medium py-4">CLOCKS</h1>
+                      <ul class="space-y-4">
+                        <li>
+                          <a href="" class="text-gray-500 text-hover"
+                            >Mantel Clocks</a
+                          >
+                        </li>
+                        <li>
+                          <a href="" class="text-gray-500 text-hover"
+                            >Anniversary</a
+                          >
+                        </li>
+                        <li>
+                          <a href="" class="text-gray-500 text-hover"
+                            >Wall Clocks</a
+                          >
+                        </li>
+                        <li>
+                          <a href="" class="text-gray-500 text-hover"
+                            >Digital</a
+                          >
+                        </li>
+                        <li>
+                          <a href="" class="text-gray-500 text-hover">
+                            Travel and Alarm</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div>
+                      <img
+                        src="https://woodmart.xtemos.com/wp-content/uploads/2017/01/menu-product-3-118x118.jpg"
+                        alt=""
+                      />
+
+                      <h1 class="text-[15px] font-medium py-4">TABLETOP</h1>
+                      <ul class="space-y-4">
+                        <li>
+                          <a href="" class="text-gray-500 text-hover"
+                            >Mantel Clocks</a
+                          >
+                        </li>
+                        <li>
+                          <a href="" class="text-gray-500 text-hover"
+                            >Anniversary</a
+                          >
+                        </li>
+                        <li>
+                          <a href="" class="text-gray-500 text-hover"
+                            >Wall Clocks</a
+                          >
+                        </li>
+                        <li>
+                          <a href="" class="text-gray-500 text-hover"
+                            >Digital</a
+                          >
+                        </li>
+                        <li>
+                          <a href="" class="text-gray-500 text-hover">
+                            Travel and Alarm</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div>
+                      <img
+                        src="https://woodmart.xtemos.com/wp-content/uploads/2017/01/menu-product-3-2-118x118.jpg"
+                        alt=""
+                      />
+
+                      <h1 class="text-[15px] font-medium py-4">KITCHEN</h1>
+                      <ul class="space-y-4">
+                        <li>
+                          <a href="" class="text-gray-500 text-hover"
+                            >Mantel Clocks</a
+                          >
+                        </li>
+                        <li>
+                          <a href="" class="text-gray-500 text-hover"
+                            >Anniversary</a
+                          >
+                        </li>
+                        <li>
+                          <a href="" class="text-gray-500 text-hover"
+                            >Wall Clocks</a
+                          >
+                        </li>
+                        <li>
+                          <a href="" class="text-gray-500 text-hover"
+                            >Digital</a
+                          >
+                        </li>
+                        <li>
+                          <a href="" class="text-gray-500 text-hover">
+                            Travel and Alarm</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div>
+                      <img
+                        src="https://woodmart.xtemos.com/wp-content/uploads/2017/01/menu-product-5-2-118x118.jpg"
+                        alt=""
+                      />
+
+                      <h1 class="text-[15px] font-medium py-4">Ligting</h1>
+                      <ul class="space-y-4">
+                        <li>
+                          <a href="" class="text-gray-500 text-hover"
+                            >Mantel Clocks</a
+                          >
+                        </li>
+                        <li>
+                          <a href="" class="text-gray-500 text-hover"
+                            >Anniversary</a
+                          >
+                        </li>
+                        <li>
+                          <a href="" class="text-gray-500 text-hover"
+                            >Wall Clocks</a
+                          >
+                        </li>
+                        <li>
+                          <a href="" class="text-gray-500 text-hover"
+                            >Digital</a
+                          >
+                        </li>
+                        <li>
+                          <a href="" class="text-gray-500 text-hover">
+                            Travel and Alarm</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </div>
               <!-- Cooking item  -->
               <div
-                class="flex justify-between items-center border-b px-3 pb-2 border-gray-300 cursor-pointer gap-2"
+                class="flex group/item justify-between bg-hover py-3 items-center border-b px-3 pb-2 border-gray-300 cursor-pointer gap-2"
               >
                 <div class="flex items-center gap-2">
                   <span class="text-[14px] lg:text-[20px]">
@@ -219,10 +1137,123 @@
                   <span class="capitalize">Cooking</span>
                 </div>
                 <i class="fa-solid fa-angle-right"></i>
+                <!-- Cooking product modal  -->
+                <div
+                  class="hidden absolute overflow-hidden left-[300px] group-hover/item:block bg-gradient-to-r from-[#000000] to-[#000000d3] text-white w-[1000px] top-0 p-6 h-full"
+                >
+                  <!-- Cooking product   -->
+                  <div class="grid grid-cols-4 gap-4">
+                    <div>
+                      <h1 class="text-[15px] font-medium py-4">CLOCKS</h1>
+                      <ul class="space-y-4">
+                        <li>
+                          <a href="" class="text-hover">Mantel Clocks</a>
+                        </li>
+                        <li>
+                          <a href="" class="text-hover">Anniversary</a>
+                        </li>
+                        <li>
+                          <a href="" class="text-hover">Wall Clocks</a>
+                        </li>
+                        <li>
+                          <a href="" class="text-hover">Digital</a>
+                        </li>
+                        <li>
+                          <a href="" class="text-hover"> Travel and Alarm</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h1 class="text-[15px] font-medium py-4">TABLETOP</h1>
+                      <ul class="space-y-4">
+                        <li>
+                          <a href="" class="text-hover">Mantel Clocks</a>
+                        </li>
+                        <li>
+                          <a href="" class="text-hover">Anniversary</a>
+                        </li>
+                        <li>
+                          <a href="" class="text-hover">Wall Clocks</a>
+                        </li>
+                        <li>
+                          <a href="" class="text-hover">Digital</a>
+                        </li>
+                        <li>
+                          <a href="" class="text-hover"> Travel and Alarm</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h1 class="text-[15px] font-medium py-4">KITCHEN</h1>
+                      <ul class="space-y-4">
+                        <li>
+                          <a href="" class="text-hover">Mantel Clocks</a>
+                        </li>
+                        <li>
+                          <a href="" class="text-hover">Anniversary</a>
+                        </li>
+                        <li>
+                          <a href="" class="text-hover">Wall Clocks</a>
+                        </li>
+                        <li>
+                          <a href="" class="text-hover">Digital</a>
+                        </li>
+                        <li>
+                          <a href="" class="text-hover"> Travel and Alarm</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h1 class="text-[15px] font-medium py-4">Ligting</h1>
+                      <ul class="space-y-4">
+                        <li>
+                          <a href="" class="text-hover">Mantel Clocks</a>
+                        </li>
+                        <li>
+                          <a href="" class="text-hover">Anniversary</a>
+                        </li>
+                        <li>
+                          <a href="" class="text-hover">Wall Clocks</a>
+                        </li>
+                        <li>
+                          <a href="" class="text-hover">Digital</a>
+                        </li>
+                        <li>
+                          <a href="" class="text-hover"> Travel and Alarm</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div
+                    class="overflow-hidden grid grid-cols-2 w-[70%] mx-auto gap-6 pt-14"
+                  >
+                    <div class="text-center">
+                      <h1 class="text-[18px] font-medium py-3">
+                        Advanced Variable products with swatches
+                      </h1>
+                      <p class="text-[14px]">
+                        Products variations colors and images without any
+                        additional plugins.
+                      </p>
+                      <button
+                        class="bg-primary text-white my-4 px-10 py-2 rounded-[20px] text-[19px] font-medium"
+                      >
+                        View more
+                      </button>
+                    </div>
+                    <div>
+                      <img
+                        class="w-full h-[190px]"
+                        src="https://woodmart.b-cdn.net/wp-content/uploads/2024/02/slider-main-demo-2-light-opt.jpg.webp"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
               </div>
               <!-- accessories item  -->
               <div
-                class="flex justify-between items-center border-b px-3 pb-2 border-gray-300 cursor-pointer gap-2"
+                class="group/item flex justify-between bg-hover py-3 items-center border-b px-3 pb-2 border-gray-300 cursor-pointer gap-2"
               >
                 <div class="flex items-center gap-2">
                   <span class="text-[14px] lg:text-[20px]">
@@ -231,10 +1262,218 @@
                   <span class="capitalize">accessories</span>
                 </div>
                 <i class="fa-solid fa-angle-right"></i>
+                <div
+                  class="hidden absolute left-[300px] group-hover/item:block bg-white w-[1000px] top-0 h-full"
+                >
+                  <!-- accessories product  modal  -->
+                  <div class="grid grid-cols-3 gap-4">
+                    <div class="p-6">
+                      <div>
+                        <h1 class="text-[15px] font-medium py-4">FURNITURE</h1>
+                        <ul class="space-y-4">
+                          <li>
+                            <a href="" class="text-gray-500 text-hover"
+                              >Mantel Clocks</a
+                            >
+                          </li>
+                          <li>
+                            <a href="" class="text-gray-500 text-hover"
+                              >Anniversary</a
+                            >
+                          </li>
+                          <li>
+                            <a href="" class="text-gray-500 text-hover"
+                              >Wall Clocks</a
+                            >
+                          </li>
+                          <li>
+                            <a href="" class="text-gray-500 text-hover"
+                              >Digital</a
+                            >
+                          </li>
+                          <li>
+                            <a href="" class="text-gray-500 text-hover">
+                              Travel and Alarm</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h1 class="text-[15px] font-medium py-4">FURNITURE</h1>
+                        <ul class="space-y-4">
+                          <li>
+                            <a href="" class="text-gray-500 text-hover"
+                              >Mantel Clocks</a
+                            >
+                          </li>
+                          <li>
+                            <a href="" class="text-gray-500 text-hover"
+                              >Anniversary</a
+                            >
+                          </li>
+                          <li>
+                            <a href="" class="text-gray-500 text-hover"
+                              >Wall Clocks</a
+                            >
+                          </li>
+                          <li>
+                            <a href="" class="text-gray-500 text-hover"
+                              >Digital</a
+                            >
+                          </li>
+                          <li>
+                            <a href="" class="text-gray-500 text-hover">
+                              Travel and Alarm</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="p-6">
+                      <div>
+                        <h1 class="text-[15px] font-medium py-4">TABLETOP</h1>
+                        <ul class="space-y-4">
+                          <li>
+                            <a href="" class="text-gray-500 text-hover"
+                              >Mantel Clocks</a
+                            >
+                          </li>
+                          <li>
+                            <a href="" class="text-gray-500 text-hover"
+                              >Anniversary</a
+                            >
+                          </li>
+                          <li>
+                            <a href="" class="text-gray-500 text-hover"
+                              >Wall Clocks</a
+                            >
+                          </li>
+                          <li>
+                            <a href="" class="text-gray-500 text-hover"
+                              >Digital</a
+                            >
+                          </li>
+                          <li>
+                            <a href="" class="text-gray-500 text-hover">
+                              Travel and Alarm</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h1 class="text-[15px] font-medium py-4">OUTDOOR</h1>
+                        <ul class="space-y-4">
+                          <li>
+                            <a href="" class="text-gray-500 text-hover"
+                              >Mantel Clocks</a
+                            >
+                          </li>
+                          <li>
+                            <a href="" class="text-gray-500 text-hover"
+                              >Anniversary</a
+                            >
+                          </li>
+                          <li>
+                            <a href="" class="text-gray-500 text-hover"
+                              >Wall Clocks</a
+                            >
+                          </li>
+                          <li>
+                            <a href="" class="text-gray-500 text-hover"
+                              >Digital</a
+                            >
+                          </li>
+                          <li>
+                            <a href="" class="text-gray-500 text-hover">
+                              Travel and Alarm</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="bg-secondary p-6">
+                      <div class="p-4">
+                        <h1 class="text-[15px] font-normal">SUMMER STYLE</h1>
+                        <!-- assessories cord  -->
+                        <div class="pt-6 space-y-3">
+                          <div
+                            class="grid grid-cols-3 border-b border-gray-300 items-center gap-2"
+                          >
+                            <img
+                              class="w-full p-3 h-full"
+                              src="https://woodmart.xtemos.com/wp-content/uploads/2016/08/product-accessories-10-88x100.jpg"
+                              alt=""
+                            />
+                            <div class="col-span-2">
+                              <h4 class="text-[18px] font-normal">
+                                Decoration wooden present
+                              </h4>
+                              <p class="text-primary text-[19px] font-medium">
+                                $45.00
+                              </p>
+                            </div>
+                          </div>
+                          <div
+                            class="grid grid-cols-3 border-b border-gray-300 items-center gap-2"
+                          >
+                            <img
+                              class="w-full p-3 h-full"
+                              src="https://woodmart.xtemos.com/wp-content/uploads/2016/09/light4.-88x100.jpg"
+                              alt=""
+                            />
+                            <div class="col-span-2">
+                              <h4 class="text-[18px] font-normal">
+                                Light wood consectetur
+                              </h4>
+                              <p class="text-primary text-[19px] font-medium">
+                                $499.00
+                              </p>
+                            </div>
+                          </div>
+                          <div
+                            class="grid grid-cols-3 border-b border-gray-300 items-center gap-2"
+                          >
+                            <img
+                              class="w-full p-3 h-full"
+                              src="https://woodmart.xtemos.com/wp-content/uploads/2016/09/accessories1-88x100.jpg"
+                              alt=""
+                            />
+                            <div class="col-span-2">
+                              <h4 class="text-[18px] font-normal">
+                                Classic wooden chair
+                              </h4>
+                              <p class="text-primary text-[19px] font-medium">
+                                $47.00
+                              </p>
+                            </div>
+                          </div>
+                          <div
+                            class="grid grid-cols-3 border-b border-gray-300 items-center gap-2"
+                          >
+                            <img
+                              class="w-full p-3 h-full"
+                              src="https://woodmart.xtemos.com/wp-content/uploads/2016/09/furniture10-88x100.jpg"
+                              alt=""
+                            />
+                            <div class="col-span-2">
+                              <h4 class="text-[18px] font-normal">
+                                Classic wooden chair
+                              </h4>
+                              <p class="text-primary text-[19px] font-medium">
+                                $47.00
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
               <!-- Clocks item  -->
               <div
-                class="flex justify-between items-center border-b px-3 pb-2 border-gray-300 cursor-pointer gap-2"
+                class="flex group/item justify-between bg-hover py-3 items-center border-b px-3 pb-2 border-gray-300 cursor-pointer gap-2"
               >
                 <div class="flex items-center gap-2">
                   <span class="text-[14px] lg:text-[20px]">
@@ -243,10 +1482,836 @@
                   <span class="capitalize">Clocks</span>
                 </div>
                 <i class="fa-solid fa-angle-right"></i>
+                <div
+                  class="hidden absolute left-[300px] group-hover/item:block bg-white w-[1000px] top-0 h-full"
+                >
+                  <!-- Clocks product  modal  -->
+                  <div class="grid grid-cols-3 gap-7">
+                    <div class="p-6 space-y-3">
+                      <div class="flex items-start gap-3">
+                        <div
+                          class="info-svg-wrapper info-icon"
+                          style="width: 50px; height: 50px"
+                        >
+                          <svg
+                            version="1.1"
+                            id="svg-6069"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px"
+                            y="0px"
+                            viewBox="0 0 512 512"
+                            style="
+                              enable-background: new 0 0 512 512;
+                              fill: #696969;
+                            "
+                            xml:space="preserve"
+                          >
+                            <g>
+                              <g>
+                                <path
+                                  d="M470.734,389.274l-8.957-271.582c-0.764-23.164-15.081-43.892-36.475-52.804l-70.138-29.224L330.823,3.207
+                                C329.309,1.188,326.932,0,324.409,0H187.591c-2.523,0-4.9,1.188-6.413,3.207l-24.342,32.456L86.698,64.886
+                                C65.304,73.8,50.987,94.527,50.223,117.69l-8.957,271.574c-0.279,8.211,3.554,15.955,9.91,20.82l-1.226,25.744
+                                c-0.471,9.913,4.955,19.195,13.827,23.647l55.939,28.063v7.894c0,9.136,7.432,16.568,16.568,16.568h239.432
+                                c9.136,0,16.568-7.432,16.568-16.568v-7.894l55.939-28.063c8.872-4.451,14.299-13.733,13.827-23.646l-1.226-25.744
+                                C467.179,405.223,471.012,397.48,470.734,389.274z M325.994,23.492l14.448,19.265c-23.601,38.865-58.312,66.209-76.426,78.781
+                                V97.214C274.145,88.365,307.844,57.495,325.994,23.492z M70.967,445.146c-3.209-1.611-5.172-4.967-5.002-8.554l0.909-19.073
+                                l44.292,18.368v25.341c0,1.521,0.223,2.989,0.609,4.389L70.967,445.146z M247.983,495.967H136.284
+                                c-0.294,0-0.534-0.241-0.534-0.534v-17.637h112.234V495.967z M247.983,461.762h-120.25c-0.294,0-0.534-0.241-0.534-0.534V179.04
+                                c0-4.428-3.588-8.017-8.017-8.017s-8.017,3.588-8.017,8.017v239.489l-48.279-20.02c-3.475-1.444-5.723-4.939-5.595-8.707
+                                l8.957-271.581c0.557-16.903,11.004-32.028,26.617-38.534l65.734-27.389c30.245,49.143,75.601,79.902,89.384,88.509V461.762z
+                                 M247.983,121.552c-18.099-12.542-52.779-39.843-76.427-78.796l14.449-19.265c18.151,34.003,51.85,64.873,61.978,73.722V121.552z
+                                 M200.197,16.033h111.604c-15.425,28.833-44.134,56.319-55.804,66.835C244.327,72.36,215.63,44.899,200.197,16.033z
+                                 M376.251,495.432c0,0.294-0.241,0.534-0.534,0.534H264.017v-18.171h112.234V495.432z M441.033,445.145l-40.807,20.47
+                                c0.386-1.4,0.608-2.867,0.608-4.388v-25.341l44.292-18.367l0.909,19.073C446.205,440.179,444.242,443.535,441.033,445.145z
+                                 M449.119,398.507l-48.284,20.021V179.04c0-4.428-3.588-8.017-8.017-8.017c-4.428,0-8.017,3.588-8.017,8.017v282.188
+                                c0,0.294-0.241,0.534-0.534,0.534h-120.25V140.805c13.783-8.607,59.139-39.365,89.384-88.509l65.734,27.389
+                                c15.612,6.505,26.06,21.63,26.617,38.534l8.957,271.591C454.837,393.57,452.589,397.065,449.119,398.507z"
+                                ></path>
+                              </g>
+                            </g>
+                            <g>
+                              <g>
+                                <path
+                                  d="M181.575,342.457c-4.203-1.399-8.741,0.869-10.141,5.07l-25.653,76.96c-1.4,4.201,0.869,8.741,5.07,10.141
+                                c0.841,0.28,1.696,0.414,2.536,0.414c3.356,0,6.484-2.124,7.604-5.483l25.653-76.96
+                                C188.045,348.397,185.776,343.857,181.575,342.457z"
+                                ></path>
+                              </g>
+                            </g>
+                            <g>
+                              <g>
+                                <path
+                                  d="M366.219,424.488l-25.653-76.96c-1.401-4.2-5.94-6.468-10.141-5.07c-4.201,1.4-6.47,5.941-5.07,10.141l25.653,76.96
+                                c1.12,3.36,4.248,5.483,7.604,5.483c0.84,0,1.695-0.134,2.536-0.414C365.35,433.228,367.619,428.687,366.219,424.488z"
+                                ></path>
+                              </g>
+                            </g>
+                            <g>
+                              <g>
+                                <path
+                                  d="M290.205,153.963c-4.428,0-8.017,3.631-8.017,8.059s3.588,8.017,8.017,8.017c4.428,0,8.017-3.588,8.017-8.017v-0.086
+                                C298.221,157.509,294.633,153.963,290.205,153.963z"
+                                ></path>
+                              </g>
+                            </g>
+                            <g>
+                              <g>
+                                <path
+                                  d="M290.205,256.577c-4.428,0-8.017,3.631-8.017,8.059s3.588,8.017,8.017,8.017c4.428,0,8.017-3.588,8.017-8.017v-0.086
+                                C298.221,260.123,294.633,256.577,290.205,256.577z"
+                                ></path>
+                              </g>
+                            </g>
+                            <g>
+                              <g>
+                                <path
+                                  d="M290.205,359.191c-4.428,0-8.017,3.631-8.017,8.06c0,4.428,3.588,8.017,8.017,8.017c4.428,0,8.017-3.588,8.017-8.017
+                                v-0.086C298.221,362.737,294.633,359.191,290.205,359.191z"
+                                ></path>
+                              </g>
+                            </g>
+                            <g>
+                              <g>
+                                <path
+                                  d="M290.205,205.185c-4.428,0-8.017,3.631-8.017,8.059s3.588,8.017,8.017,8.017c4.428,0,8.017-3.588,8.017-8.017v-0.086
+                                C298.221,208.73,294.633,205.185,290.205,205.185z"
+                                ></path>
+                              </g>
+                            </g>
+                            <g>
+                              <g>
+                                <path
+                                  d="M290.205,307.799c-4.428,0-8.017,3.631-8.017,8.059c0,4.428,3.588,8.017,8.017,8.017c4.428,0,8.017-3.588,8.017-8.017
+                                v-0.086C298.221,311.344,294.633,307.799,290.205,307.799z"
+                                ></path>
+                              </g>
+                            </g>
+                            <g>
+                              <g>
+                                <path
+                                  d="M290.205,410.412c-4.428,0-8.017,3.631-8.017,8.059c0,4.428,3.588,8.017,8.017,8.017c4.428,0,8.017-3.588,8.017-8.017
+                                v-0.085C298.221,413.958,294.633,410.412,290.205,410.412z"
+                                ></path>
+                              </g>
+                            </g>
+                          </svg>
+                        </div>
+                        <div>
+                          <h1 class="text-[15px] font-medium py-4">
+                            FURNITURE
+                          </h1>
+                          <ul class="space-y-4">
+                            <li>
+                              <a href="" class="text-gray-500 text-hover"
+                                >Mantel Clocks</a
+                              >
+                            </li>
+                            <li>
+                              <a href="" class="text-gray-500 text-hover"
+                                >Anniversary</a
+                              >
+                            </li>
+                            <li>
+                              <a href="" class="text-gray-500 text-hover"
+                                >Wall Clocks</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="flex items-start gap-3">
+                        <div
+                          class="info-svg-wrapper info-icon"
+                          style="width: 50px; height: 50px"
+                        >
+                          <svg
+                            version="1.1"
+                            id="svg-6069"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px"
+                            y="0px"
+                            viewBox="0 0 512 512"
+                            style="
+                              enable-background: new 0 0 512 512;
+                              fill: #696969;
+                            "
+                            xml:space="preserve"
+                          >
+                            <g>
+                              <g>
+                                <path
+                                  d="M470.734,389.274l-8.957-271.582c-0.764-23.164-15.081-43.892-36.475-52.804l-70.138-29.224L330.823,3.207
+                                C329.309,1.188,326.932,0,324.409,0H187.591c-2.523,0-4.9,1.188-6.413,3.207l-24.342,32.456L86.698,64.886
+                                C65.304,73.8,50.987,94.527,50.223,117.69l-8.957,271.574c-0.279,8.211,3.554,15.955,9.91,20.82l-1.226,25.744
+                                c-0.471,9.913,4.955,19.195,13.827,23.647l55.939,28.063v7.894c0,9.136,7.432,16.568,16.568,16.568h239.432
+                                c9.136,0,16.568-7.432,16.568-16.568v-7.894l55.939-28.063c8.872-4.451,14.299-13.733,13.827-23.646l-1.226-25.744
+                                C467.179,405.223,471.012,397.48,470.734,389.274z M325.994,23.492l14.448,19.265c-23.601,38.865-58.312,66.209-76.426,78.781
+                                V97.214C274.145,88.365,307.844,57.495,325.994,23.492z M70.967,445.146c-3.209-1.611-5.172-4.967-5.002-8.554l0.909-19.073
+                                l44.292,18.368v25.341c0,1.521,0.223,2.989,0.609,4.389L70.967,445.146z M247.983,495.967H136.284
+                                c-0.294,0-0.534-0.241-0.534-0.534v-17.637h112.234V495.967z M247.983,461.762h-120.25c-0.294,0-0.534-0.241-0.534-0.534V179.04
+                                c0-4.428-3.588-8.017-8.017-8.017s-8.017,3.588-8.017,8.017v239.489l-48.279-20.02c-3.475-1.444-5.723-4.939-5.595-8.707
+                                l8.957-271.581c0.557-16.903,11.004-32.028,26.617-38.534l65.734-27.389c30.245,49.143,75.601,79.902,89.384,88.509V461.762z
+                                 M247.983,121.552c-18.099-12.542-52.779-39.843-76.427-78.796l14.449-19.265c18.151,34.003,51.85,64.873,61.978,73.722V121.552z
+                                 M200.197,16.033h111.604c-15.425,28.833-44.134,56.319-55.804,66.835C244.327,72.36,215.63,44.899,200.197,16.033z
+                                 M376.251,495.432c0,0.294-0.241,0.534-0.534,0.534H264.017v-18.171h112.234V495.432z M441.033,445.145l-40.807,20.47
+                                c0.386-1.4,0.608-2.867,0.608-4.388v-25.341l44.292-18.367l0.909,19.073C446.205,440.179,444.242,443.535,441.033,445.145z
+                                 M449.119,398.507l-48.284,20.021V179.04c0-4.428-3.588-8.017-8.017-8.017c-4.428,0-8.017,3.588-8.017,8.017v282.188
+                                c0,0.294-0.241,0.534-0.534,0.534h-120.25V140.805c13.783-8.607,59.139-39.365,89.384-88.509l65.734,27.389
+                                c15.612,6.505,26.06,21.63,26.617,38.534l8.957,271.591C454.837,393.57,452.589,397.065,449.119,398.507z"
+                                ></path>
+                              </g>
+                            </g>
+                            <g>
+                              <g>
+                                <path
+                                  d="M181.575,342.457c-4.203-1.399-8.741,0.869-10.141,5.07l-25.653,76.96c-1.4,4.201,0.869,8.741,5.07,10.141
+                                c0.841,0.28,1.696,0.414,2.536,0.414c3.356,0,6.484-2.124,7.604-5.483l25.653-76.96
+                                C188.045,348.397,185.776,343.857,181.575,342.457z"
+                                ></path>
+                              </g>
+                            </g>
+                            <g>
+                              <g>
+                                <path
+                                  d="M366.219,424.488l-25.653-76.96c-1.401-4.2-5.94-6.468-10.141-5.07c-4.201,1.4-6.47,5.941-5.07,10.141l25.653,76.96
+                                c1.12,3.36,4.248,5.483,7.604,5.483c0.84,0,1.695-0.134,2.536-0.414C365.35,433.228,367.619,428.687,366.219,424.488z"
+                                ></path>
+                              </g>
+                            </g>
+                            <g>
+                              <g>
+                                <path
+                                  d="M290.205,153.963c-4.428,0-8.017,3.631-8.017,8.059s3.588,8.017,8.017,8.017c4.428,0,8.017-3.588,8.017-8.017v-0.086
+                                C298.221,157.509,294.633,153.963,290.205,153.963z"
+                                ></path>
+                              </g>
+                            </g>
+                            <g>
+                              <g>
+                                <path
+                                  d="M290.205,256.577c-4.428,0-8.017,3.631-8.017,8.059s3.588,8.017,8.017,8.017c4.428,0,8.017-3.588,8.017-8.017v-0.086
+                                C298.221,260.123,294.633,256.577,290.205,256.577z"
+                                ></path>
+                              </g>
+                            </g>
+                            <g>
+                              <g>
+                                <path
+                                  d="M290.205,359.191c-4.428,0-8.017,3.631-8.017,8.06c0,4.428,3.588,8.017,8.017,8.017c4.428,0,8.017-3.588,8.017-8.017
+                                v-0.086C298.221,362.737,294.633,359.191,290.205,359.191z"
+                                ></path>
+                              </g>
+                            </g>
+                            <g>
+                              <g>
+                                <path
+                                  d="M290.205,205.185c-4.428,0-8.017,3.631-8.017,8.059s3.588,8.017,8.017,8.017c4.428,0,8.017-3.588,8.017-8.017v-0.086
+                                C298.221,208.73,294.633,205.185,290.205,205.185z"
+                                ></path>
+                              </g>
+                            </g>
+                            <g>
+                              <g>
+                                <path
+                                  d="M290.205,307.799c-4.428,0-8.017,3.631-8.017,8.059c0,4.428,3.588,8.017,8.017,8.017c4.428,0,8.017-3.588,8.017-8.017
+                                v-0.086C298.221,311.344,294.633,307.799,290.205,307.799z"
+                                ></path>
+                              </g>
+                            </g>
+                            <g>
+                              <g>
+                                <path
+                                  d="M290.205,410.412c-4.428,0-8.017,3.631-8.017,8.059c0,4.428,3.588,8.017,8.017,8.017c4.428,0,8.017-3.588,8.017-8.017
+                                v-0.085C298.221,413.958,294.633,410.412,290.205,410.412z"
+                                ></path>
+                              </g>
+                            </g>
+                          </svg>
+                        </div>
+                        <div>
+                          <h1 class="text-[15px] font-medium py-4">
+                            FURNITURE
+                          </h1>
+                          <ul class="space-y-4">
+                            <li>
+                              <a href="" class="text-gray-500 text-hover"
+                                >Mantel Clocks</a
+                              >
+                            </li>
+                            <li>
+                              <a href="" class="text-gray-500 text-hover"
+                                >Anniversary</a
+                              >
+                            </li>
+                            <li>
+                              <a href="" class="text-gray-500 text-hover"
+                                >Wall Clocks</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="flex items-start gap-3">
+                        <div
+                          class="info-svg-wrapper info-icon"
+                          style="width: 50px; height: 50px"
+                        >
+                          <svg
+                            version="1.1"
+                            id="svg-6069"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px"
+                            y="0px"
+                            viewBox="0 0 512 512"
+                            style="
+                              enable-background: new 0 0 512 512;
+                              fill: #696969;
+                            "
+                            xml:space="preserve"
+                          >
+                            <g>
+                              <g>
+                                <path
+                                  d="M470.734,389.274l-8.957-271.582c-0.764-23.164-15.081-43.892-36.475-52.804l-70.138-29.224L330.823,3.207
+                                C329.309,1.188,326.932,0,324.409,0H187.591c-2.523,0-4.9,1.188-6.413,3.207l-24.342,32.456L86.698,64.886
+                                C65.304,73.8,50.987,94.527,50.223,117.69l-8.957,271.574c-0.279,8.211,3.554,15.955,9.91,20.82l-1.226,25.744
+                                c-0.471,9.913,4.955,19.195,13.827,23.647l55.939,28.063v7.894c0,9.136,7.432,16.568,16.568,16.568h239.432
+                                c9.136,0,16.568-7.432,16.568-16.568v-7.894l55.939-28.063c8.872-4.451,14.299-13.733,13.827-23.646l-1.226-25.744
+                                C467.179,405.223,471.012,397.48,470.734,389.274z M325.994,23.492l14.448,19.265c-23.601,38.865-58.312,66.209-76.426,78.781
+                                V97.214C274.145,88.365,307.844,57.495,325.994,23.492z M70.967,445.146c-3.209-1.611-5.172-4.967-5.002-8.554l0.909-19.073
+                                l44.292,18.368v25.341c0,1.521,0.223,2.989,0.609,4.389L70.967,445.146z M247.983,495.967H136.284
+                                c-0.294,0-0.534-0.241-0.534-0.534v-17.637h112.234V495.967z M247.983,461.762h-120.25c-0.294,0-0.534-0.241-0.534-0.534V179.04
+                                c0-4.428-3.588-8.017-8.017-8.017s-8.017,3.588-8.017,8.017v239.489l-48.279-20.02c-3.475-1.444-5.723-4.939-5.595-8.707
+                                l8.957-271.581c0.557-16.903,11.004-32.028,26.617-38.534l65.734-27.389c30.245,49.143,75.601,79.902,89.384,88.509V461.762z
+                                 M247.983,121.552c-18.099-12.542-52.779-39.843-76.427-78.796l14.449-19.265c18.151,34.003,51.85,64.873,61.978,73.722V121.552z
+                                 M200.197,16.033h111.604c-15.425,28.833-44.134,56.319-55.804,66.835C244.327,72.36,215.63,44.899,200.197,16.033z
+                                 M376.251,495.432c0,0.294-0.241,0.534-0.534,0.534H264.017v-18.171h112.234V495.432z M441.033,445.145l-40.807,20.47
+                                c0.386-1.4,0.608-2.867,0.608-4.388v-25.341l44.292-18.367l0.909,19.073C446.205,440.179,444.242,443.535,441.033,445.145z
+                                 M449.119,398.507l-48.284,20.021V179.04c0-4.428-3.588-8.017-8.017-8.017c-4.428,0-8.017,3.588-8.017,8.017v282.188
+                                c0,0.294-0.241,0.534-0.534,0.534h-120.25V140.805c13.783-8.607,59.139-39.365,89.384-88.509l65.734,27.389
+                                c15.612,6.505,26.06,21.63,26.617,38.534l8.957,271.591C454.837,393.57,452.589,397.065,449.119,398.507z"
+                                ></path>
+                              </g>
+                            </g>
+                            <g>
+                              <g>
+                                <path
+                                  d="M181.575,342.457c-4.203-1.399-8.741,0.869-10.141,5.07l-25.653,76.96c-1.4,4.201,0.869,8.741,5.07,10.141
+                                c0.841,0.28,1.696,0.414,2.536,0.414c3.356,0,6.484-2.124,7.604-5.483l25.653-76.96
+                                C188.045,348.397,185.776,343.857,181.575,342.457z"
+                                ></path>
+                              </g>
+                            </g>
+                            <g>
+                              <g>
+                                <path
+                                  d="M366.219,424.488l-25.653-76.96c-1.401-4.2-5.94-6.468-10.141-5.07c-4.201,1.4-6.47,5.941-5.07,10.141l25.653,76.96
+                                c1.12,3.36,4.248,5.483,7.604,5.483c0.84,0,1.695-0.134,2.536-0.414C365.35,433.228,367.619,428.687,366.219,424.488z"
+                                ></path>
+                              </g>
+                            </g>
+                            <g>
+                              <g>
+                                <path
+                                  d="M290.205,153.963c-4.428,0-8.017,3.631-8.017,8.059s3.588,8.017,8.017,8.017c4.428,0,8.017-3.588,8.017-8.017v-0.086
+                                C298.221,157.509,294.633,153.963,290.205,153.963z"
+                                ></path>
+                              </g>
+                            </g>
+                            <g>
+                              <g>
+                                <path
+                                  d="M290.205,256.577c-4.428,0-8.017,3.631-8.017,8.059s3.588,8.017,8.017,8.017c4.428,0,8.017-3.588,8.017-8.017v-0.086
+                                C298.221,260.123,294.633,256.577,290.205,256.577z"
+                                ></path>
+                              </g>
+                            </g>
+                            <g>
+                              <g>
+                                <path
+                                  d="M290.205,359.191c-4.428,0-8.017,3.631-8.017,8.06c0,4.428,3.588,8.017,8.017,8.017c4.428,0,8.017-3.588,8.017-8.017
+                                v-0.086C298.221,362.737,294.633,359.191,290.205,359.191z"
+                                ></path>
+                              </g>
+                            </g>
+                            <g>
+                              <g>
+                                <path
+                                  d="M290.205,205.185c-4.428,0-8.017,3.631-8.017,8.059s3.588,8.017,8.017,8.017c4.428,0,8.017-3.588,8.017-8.017v-0.086
+                                C298.221,208.73,294.633,205.185,290.205,205.185z"
+                                ></path>
+                              </g>
+                            </g>
+                            <g>
+                              <g>
+                                <path
+                                  d="M290.205,307.799c-4.428,0-8.017,3.631-8.017,8.059c0,4.428,3.588,8.017,8.017,8.017c4.428,0,8.017-3.588,8.017-8.017
+                                v-0.086C298.221,311.344,294.633,307.799,290.205,307.799z"
+                                ></path>
+                              </g>
+                            </g>
+                            <g>
+                              <g>
+                                <path
+                                  d="M290.205,410.412c-4.428,0-8.017,3.631-8.017,8.059c0,4.428,3.588,8.017,8.017,8.017c4.428,0,8.017-3.588,8.017-8.017
+                                v-0.085C298.221,413.958,294.633,410.412,290.205,410.412z"
+                                ></path>
+                              </g>
+                            </g>
+                          </svg>
+                        </div>
+                        <div>
+                          <h1 class="text-[15px] font-medium py-4">
+                            FURNITURE
+                          </h1>
+                          <ul class="space-y-4">
+                            <li>
+                              <a href="" class="text-gray-500 text-hover"
+                                >Mantel Clocks</a
+                              >
+                            </li>
+                            <li>
+                              <a href="" class="text-gray-500 text-hover"
+                                >Anniversary</a
+                              >
+                            </li>
+                            <li>
+                              <a href="" class="text-gray-500 text-hover"
+                                >Wall Clocks</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-6 space-y-3">
+                      <div class="flex items-start gap-3">
+                        <div
+                          class="info-svg-wrapper info-icon"
+                          style="width: 50px; height: 50px"
+                        >
+                          <svg
+                            version="1.1"
+                            id="svg-6069"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px"
+                            y="0px"
+                            viewBox="0 0 512 512"
+                            style="
+                              enable-background: new 0 0 512 512;
+                              fill: #696969;
+                            "
+                            xml:space="preserve"
+                          >
+                            <g>
+                              <g>
+                                <path
+                                  d="M470.734,389.274l-8.957-271.582c-0.764-23.164-15.081-43.892-36.475-52.804l-70.138-29.224L330.823,3.207
+                                C329.309,1.188,326.932,0,324.409,0H187.591c-2.523,0-4.9,1.188-6.413,3.207l-24.342,32.456L86.698,64.886
+                                C65.304,73.8,50.987,94.527,50.223,117.69l-8.957,271.574c-0.279,8.211,3.554,15.955,9.91,20.82l-1.226,25.744
+                                c-0.471,9.913,4.955,19.195,13.827,23.647l55.939,28.063v7.894c0,9.136,7.432,16.568,16.568,16.568h239.432
+                                c9.136,0,16.568-7.432,16.568-16.568v-7.894l55.939-28.063c8.872-4.451,14.299-13.733,13.827-23.646l-1.226-25.744
+                                C467.179,405.223,471.012,397.48,470.734,389.274z M325.994,23.492l14.448,19.265c-23.601,38.865-58.312,66.209-76.426,78.781
+                                V97.214C274.145,88.365,307.844,57.495,325.994,23.492z M70.967,445.146c-3.209-1.611-5.172-4.967-5.002-8.554l0.909-19.073
+                                l44.292,18.368v25.341c0,1.521,0.223,2.989,0.609,4.389L70.967,445.146z M247.983,495.967H136.284
+                                c-0.294,0-0.534-0.241-0.534-0.534v-17.637h112.234V495.967z M247.983,461.762h-120.25c-0.294,0-0.534-0.241-0.534-0.534V179.04
+                                c0-4.428-3.588-8.017-8.017-8.017s-8.017,3.588-8.017,8.017v239.489l-48.279-20.02c-3.475-1.444-5.723-4.939-5.595-8.707
+                                l8.957-271.581c0.557-16.903,11.004-32.028,26.617-38.534l65.734-27.389c30.245,49.143,75.601,79.902,89.384,88.509V461.762z
+                                 M247.983,121.552c-18.099-12.542-52.779-39.843-76.427-78.796l14.449-19.265c18.151,34.003,51.85,64.873,61.978,73.722V121.552z
+                                 M200.197,16.033h111.604c-15.425,28.833-44.134,56.319-55.804,66.835C244.327,72.36,215.63,44.899,200.197,16.033z
+                                 M376.251,495.432c0,0.294-0.241,0.534-0.534,0.534H264.017v-18.171h112.234V495.432z M441.033,445.145l-40.807,20.47
+                                c0.386-1.4,0.608-2.867,0.608-4.388v-25.341l44.292-18.367l0.909,19.073C446.205,440.179,444.242,443.535,441.033,445.145z
+                                 M449.119,398.507l-48.284,20.021V179.04c0-4.428-3.588-8.017-8.017-8.017c-4.428,0-8.017,3.588-8.017,8.017v282.188
+                                c0,0.294-0.241,0.534-0.534,0.534h-120.25V140.805c13.783-8.607,59.139-39.365,89.384-88.509l65.734,27.389
+                                c15.612,6.505,26.06,21.63,26.617,38.534l8.957,271.591C454.837,393.57,452.589,397.065,449.119,398.507z"
+                                ></path>
+                              </g>
+                            </g>
+                            <g>
+                              <g>
+                                <path
+                                  d="M181.575,342.457c-4.203-1.399-8.741,0.869-10.141,5.07l-25.653,76.96c-1.4,4.201,0.869,8.741,5.07,10.141
+                                c0.841,0.28,1.696,0.414,2.536,0.414c3.356,0,6.484-2.124,7.604-5.483l25.653-76.96
+                                C188.045,348.397,185.776,343.857,181.575,342.457z"
+                                ></path>
+                              </g>
+                            </g>
+                            <g>
+                              <g>
+                                <path
+                                  d="M366.219,424.488l-25.653-76.96c-1.401-4.2-5.94-6.468-10.141-5.07c-4.201,1.4-6.47,5.941-5.07,10.141l25.653,76.96
+                                c1.12,3.36,4.248,5.483,7.604,5.483c0.84,0,1.695-0.134,2.536-0.414C365.35,433.228,367.619,428.687,366.219,424.488z"
+                                ></path>
+                              </g>
+                            </g>
+                            <g>
+                              <g>
+                                <path
+                                  d="M290.205,153.963c-4.428,0-8.017,3.631-8.017,8.059s3.588,8.017,8.017,8.017c4.428,0,8.017-3.588,8.017-8.017v-0.086
+                                C298.221,157.509,294.633,153.963,290.205,153.963z"
+                                ></path>
+                              </g>
+                            </g>
+                            <g>
+                              <g>
+                                <path
+                                  d="M290.205,256.577c-4.428,0-8.017,3.631-8.017,8.059s3.588,8.017,8.017,8.017c4.428,0,8.017-3.588,8.017-8.017v-0.086
+                                C298.221,260.123,294.633,256.577,290.205,256.577z"
+                                ></path>
+                              </g>
+                            </g>
+                            <g>
+                              <g>
+                                <path
+                                  d="M290.205,359.191c-4.428,0-8.017,3.631-8.017,8.06c0,4.428,3.588,8.017,8.017,8.017c4.428,0,8.017-3.588,8.017-8.017
+                                v-0.086C298.221,362.737,294.633,359.191,290.205,359.191z"
+                                ></path>
+                              </g>
+                            </g>
+                            <g>
+                              <g>
+                                <path
+                                  d="M290.205,205.185c-4.428,0-8.017,3.631-8.017,8.059s3.588,8.017,8.017,8.017c4.428,0,8.017-3.588,8.017-8.017v-0.086
+                                C298.221,208.73,294.633,205.185,290.205,205.185z"
+                                ></path>
+                              </g>
+                            </g>
+                            <g>
+                              <g>
+                                <path
+                                  d="M290.205,307.799c-4.428,0-8.017,3.631-8.017,8.059c0,4.428,3.588,8.017,8.017,8.017c4.428,0,8.017-3.588,8.017-8.017
+                                v-0.086C298.221,311.344,294.633,307.799,290.205,307.799z"
+                                ></path>
+                              </g>
+                            </g>
+                            <g>
+                              <g>
+                                <path
+                                  d="M290.205,410.412c-4.428,0-8.017,3.631-8.017,8.059c0,4.428,3.588,8.017,8.017,8.017c4.428,0,8.017-3.588,8.017-8.017
+                                v-0.085C298.221,413.958,294.633,410.412,290.205,410.412z"
+                                ></path>
+                              </g>
+                            </g>
+                          </svg>
+                        </div>
+                        <div>
+                          <h1 class="text-[15px] font-medium py-4">
+                            FURNITURE
+                          </h1>
+                          <ul class="space-y-4">
+                            <li>
+                              <a href="" class="text-gray-500 text-hover"
+                                >Mantel Clocks</a
+                              >
+                            </li>
+                            <li>
+                              <a href="" class="text-gray-500 text-hover"
+                                >Anniversary</a
+                              >
+                            </li>
+                            <li>
+                              <a href="" class="text-gray-500 text-hover"
+                                >Wall Clocks</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="flex items-start gap-3">
+                        <div
+                          class="info-svg-wrapper info-icon"
+                          style="width: 50px; height: 50px"
+                        >
+                          <svg
+                            version="1.1"
+                            id="svg-6069"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px"
+                            y="0px"
+                            viewBox="0 0 512 512"
+                            style="
+                              enable-background: new 0 0 512 512;
+                              fill: #696969;
+                            "
+                            xml:space="preserve"
+                          >
+                            <g>
+                              <g>
+                                <path
+                                  d="M470.734,389.274l-8.957-271.582c-0.764-23.164-15.081-43.892-36.475-52.804l-70.138-29.224L330.823,3.207
+                                C329.309,1.188,326.932,0,324.409,0H187.591c-2.523,0-4.9,1.188-6.413,3.207l-24.342,32.456L86.698,64.886
+                                C65.304,73.8,50.987,94.527,50.223,117.69l-8.957,271.574c-0.279,8.211,3.554,15.955,9.91,20.82l-1.226,25.744
+                                c-0.471,9.913,4.955,19.195,13.827,23.647l55.939,28.063v7.894c0,9.136,7.432,16.568,16.568,16.568h239.432
+                                c9.136,0,16.568-7.432,16.568-16.568v-7.894l55.939-28.063c8.872-4.451,14.299-13.733,13.827-23.646l-1.226-25.744
+                                C467.179,405.223,471.012,397.48,470.734,389.274z M325.994,23.492l14.448,19.265c-23.601,38.865-58.312,66.209-76.426,78.781
+                                V97.214C274.145,88.365,307.844,57.495,325.994,23.492z M70.967,445.146c-3.209-1.611-5.172-4.967-5.002-8.554l0.909-19.073
+                                l44.292,18.368v25.341c0,1.521,0.223,2.989,0.609,4.389L70.967,445.146z M247.983,495.967H136.284
+                                c-0.294,0-0.534-0.241-0.534-0.534v-17.637h112.234V495.967z M247.983,461.762h-120.25c-0.294,0-0.534-0.241-0.534-0.534V179.04
+                                c0-4.428-3.588-8.017-8.017-8.017s-8.017,3.588-8.017,8.017v239.489l-48.279-20.02c-3.475-1.444-5.723-4.939-5.595-8.707
+                                l8.957-271.581c0.557-16.903,11.004-32.028,26.617-38.534l65.734-27.389c30.245,49.143,75.601,79.902,89.384,88.509V461.762z
+                                 M247.983,121.552c-18.099-12.542-52.779-39.843-76.427-78.796l14.449-19.265c18.151,34.003,51.85,64.873,61.978,73.722V121.552z
+                                 M200.197,16.033h111.604c-15.425,28.833-44.134,56.319-55.804,66.835C244.327,72.36,215.63,44.899,200.197,16.033z
+                                 M376.251,495.432c0,0.294-0.241,0.534-0.534,0.534H264.017v-18.171h112.234V495.432z M441.033,445.145l-40.807,20.47
+                                c0.386-1.4,0.608-2.867,0.608-4.388v-25.341l44.292-18.367l0.909,19.073C446.205,440.179,444.242,443.535,441.033,445.145z
+                                 M449.119,398.507l-48.284,20.021V179.04c0-4.428-3.588-8.017-8.017-8.017c-4.428,0-8.017,3.588-8.017,8.017v282.188
+                                c0,0.294-0.241,0.534-0.534,0.534h-120.25V140.805c13.783-8.607,59.139-39.365,89.384-88.509l65.734,27.389
+                                c15.612,6.505,26.06,21.63,26.617,38.534l8.957,271.591C454.837,393.57,452.589,397.065,449.119,398.507z"
+                                ></path>
+                              </g>
+                            </g>
+                            <g>
+                              <g>
+                                <path
+                                  d="M181.575,342.457c-4.203-1.399-8.741,0.869-10.141,5.07l-25.653,76.96c-1.4,4.201,0.869,8.741,5.07,10.141
+                                c0.841,0.28,1.696,0.414,2.536,0.414c3.356,0,6.484-2.124,7.604-5.483l25.653-76.96
+                                C188.045,348.397,185.776,343.857,181.575,342.457z"
+                                ></path>
+                              </g>
+                            </g>
+                            <g>
+                              <g>
+                                <path
+                                  d="M366.219,424.488l-25.653-76.96c-1.401-4.2-5.94-6.468-10.141-5.07c-4.201,1.4-6.47,5.941-5.07,10.141l25.653,76.96
+                                c1.12,3.36,4.248,5.483,7.604,5.483c0.84,0,1.695-0.134,2.536-0.414C365.35,433.228,367.619,428.687,366.219,424.488z"
+                                ></path>
+                              </g>
+                            </g>
+                            <g>
+                              <g>
+                                <path
+                                  d="M290.205,153.963c-4.428,0-8.017,3.631-8.017,8.059s3.588,8.017,8.017,8.017c4.428,0,8.017-3.588,8.017-8.017v-0.086
+                                C298.221,157.509,294.633,153.963,290.205,153.963z"
+                                ></path>
+                              </g>
+                            </g>
+                            <g>
+                              <g>
+                                <path
+                                  d="M290.205,256.577c-4.428,0-8.017,3.631-8.017,8.059s3.588,8.017,8.017,8.017c4.428,0,8.017-3.588,8.017-8.017v-0.086
+                                C298.221,260.123,294.633,256.577,290.205,256.577z"
+                                ></path>
+                              </g>
+                            </g>
+                            <g>
+                              <g>
+                                <path
+                                  d="M290.205,359.191c-4.428,0-8.017,3.631-8.017,8.06c0,4.428,3.588,8.017,8.017,8.017c4.428,0,8.017-3.588,8.017-8.017
+                                v-0.086C298.221,362.737,294.633,359.191,290.205,359.191z"
+                                ></path>
+                              </g>
+                            </g>
+                            <g>
+                              <g>
+                                <path
+                                  d="M290.205,205.185c-4.428,0-8.017,3.631-8.017,8.059s3.588,8.017,8.017,8.017c4.428,0,8.017-3.588,8.017-8.017v-0.086
+                                C298.221,208.73,294.633,205.185,290.205,205.185z"
+                                ></path>
+                              </g>
+                            </g>
+                            <g>
+                              <g>
+                                <path
+                                  d="M290.205,307.799c-4.428,0-8.017,3.631-8.017,8.059c0,4.428,3.588,8.017,8.017,8.017c4.428,0,8.017-3.588,8.017-8.017
+                                v-0.086C298.221,311.344,294.633,307.799,290.205,307.799z"
+                                ></path>
+                              </g>
+                            </g>
+                            <g>
+                              <g>
+                                <path
+                                  d="M290.205,410.412c-4.428,0-8.017,3.631-8.017,8.059c0,4.428,3.588,8.017,8.017,8.017c4.428,0,8.017-3.588,8.017-8.017
+                                v-0.085C298.221,413.958,294.633,410.412,290.205,410.412z"
+                                ></path>
+                              </g>
+                            </g>
+                          </svg>
+                        </div>
+                        <div>
+                          <h1 class="text-[15px] font-medium py-4">
+                            FURNITURE
+                          </h1>
+                          <ul class="space-y-4">
+                            <li>
+                              <a href="" class="text-gray-500 text-hover"
+                                >Mantel Clocks</a
+                              >
+                            </li>
+                            <li>
+                              <a href="" class="text-gray-500 text-hover"
+                                >Anniversary</a
+                              >
+                            </li>
+                            <li>
+                              <a href="" class="text-gray-500 text-hover"
+                                >Wall Clocks</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="flex items-start gap-3">
+                        <div
+                          class="info-svg-wrapper info-icon"
+                          style="width: 50px; height: 50px"
+                        >
+                          <svg
+                            version="1.1"
+                            id="svg-6069"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px"
+                            y="0px"
+                            viewBox="0 0 512 512"
+                            style="
+                              enable-background: new 0 0 512 512;
+                              fill: #696969;
+                            "
+                            xml:space="preserve"
+                          >
+                            <g>
+                              <g>
+                                <path
+                                  d="M470.734,389.274l-8.957-271.582c-0.764-23.164-15.081-43.892-36.475-52.804l-70.138-29.224L330.823,3.207
+                                C329.309,1.188,326.932,0,324.409,0H187.591c-2.523,0-4.9,1.188-6.413,3.207l-24.342,32.456L86.698,64.886
+                                C65.304,73.8,50.987,94.527,50.223,117.69l-8.957,271.574c-0.279,8.211,3.554,15.955,9.91,20.82l-1.226,25.744
+                                c-0.471,9.913,4.955,19.195,13.827,23.647l55.939,28.063v7.894c0,9.136,7.432,16.568,16.568,16.568h239.432
+                                c9.136,0,16.568-7.432,16.568-16.568v-7.894l55.939-28.063c8.872-4.451,14.299-13.733,13.827-23.646l-1.226-25.744
+                                C467.179,405.223,471.012,397.48,470.734,389.274z M325.994,23.492l14.448,19.265c-23.601,38.865-58.312,66.209-76.426,78.781
+                                V97.214C274.145,88.365,307.844,57.495,325.994,23.492z M70.967,445.146c-3.209-1.611-5.172-4.967-5.002-8.554l0.909-19.073
+                                l44.292,18.368v25.341c0,1.521,0.223,2.989,0.609,4.389L70.967,445.146z M247.983,495.967H136.284
+                                c-0.294,0-0.534-0.241-0.534-0.534v-17.637h112.234V495.967z M247.983,461.762h-120.25c-0.294,0-0.534-0.241-0.534-0.534V179.04
+                                c0-4.428-3.588-8.017-8.017-8.017s-8.017,3.588-8.017,8.017v239.489l-48.279-20.02c-3.475-1.444-5.723-4.939-5.595-8.707
+                                l8.957-271.581c0.557-16.903,11.004-32.028,26.617-38.534l65.734-27.389c30.245,49.143,75.601,79.902,89.384,88.509V461.762z
+                                 M247.983,121.552c-18.099-12.542-52.779-39.843-76.427-78.796l14.449-19.265c18.151,34.003,51.85,64.873,61.978,73.722V121.552z
+                                 M200.197,16.033h111.604c-15.425,28.833-44.134,56.319-55.804,66.835C244.327,72.36,215.63,44.899,200.197,16.033z
+                                 M376.251,495.432c0,0.294-0.241,0.534-0.534,0.534H264.017v-18.171h112.234V495.432z M441.033,445.145l-40.807,20.47
+                                c0.386-1.4,0.608-2.867,0.608-4.388v-25.341l44.292-18.367l0.909,19.073C446.205,440.179,444.242,443.535,441.033,445.145z
+                                 M449.119,398.507l-48.284,20.021V179.04c0-4.428-3.588-8.017-8.017-8.017c-4.428,0-8.017,3.588-8.017,8.017v282.188
+                                c0,0.294-0.241,0.534-0.534,0.534h-120.25V140.805c13.783-8.607,59.139-39.365,89.384-88.509l65.734,27.389
+                                c15.612,6.505,26.06,21.63,26.617,38.534l8.957,271.591C454.837,393.57,452.589,397.065,449.119,398.507z"
+                                ></path>
+                              </g>
+                            </g>
+                            <g>
+                              <g>
+                                <path
+                                  d="M181.575,342.457c-4.203-1.399-8.741,0.869-10.141,5.07l-25.653,76.96c-1.4,4.201,0.869,8.741,5.07,10.141
+                                c0.841,0.28,1.696,0.414,2.536,0.414c3.356,0,6.484-2.124,7.604-5.483l25.653-76.96
+                                C188.045,348.397,185.776,343.857,181.575,342.457z"
+                                ></path>
+                              </g>
+                            </g>
+                            <g>
+                              <g>
+                                <path
+                                  d="M366.219,424.488l-25.653-76.96c-1.401-4.2-5.94-6.468-10.141-5.07c-4.201,1.4-6.47,5.941-5.07,10.141l25.653,76.96
+                                c1.12,3.36,4.248,5.483,7.604,5.483c0.84,0,1.695-0.134,2.536-0.414C365.35,433.228,367.619,428.687,366.219,424.488z"
+                                ></path>
+                              </g>
+                            </g>
+                            <g>
+                              <g>
+                                <path
+                                  d="M290.205,153.963c-4.428,0-8.017,3.631-8.017,8.059s3.588,8.017,8.017,8.017c4.428,0,8.017-3.588,8.017-8.017v-0.086
+                                C298.221,157.509,294.633,153.963,290.205,153.963z"
+                                ></path>
+                              </g>
+                            </g>
+                            <g>
+                              <g>
+                                <path
+                                  d="M290.205,256.577c-4.428,0-8.017,3.631-8.017,8.059s3.588,8.017,8.017,8.017c4.428,0,8.017-3.588,8.017-8.017v-0.086
+                                C298.221,260.123,294.633,256.577,290.205,256.577z"
+                                ></path>
+                              </g>
+                            </g>
+                            <g>
+                              <g>
+                                <path
+                                  d="M290.205,359.191c-4.428,0-8.017,3.631-8.017,8.06c0,4.428,3.588,8.017,8.017,8.017c4.428,0,8.017-3.588,8.017-8.017
+                                v-0.086C298.221,362.737,294.633,359.191,290.205,359.191z"
+                                ></path>
+                              </g>
+                            </g>
+                            <g>
+                              <g>
+                                <path
+                                  d="M290.205,205.185c-4.428,0-8.017,3.631-8.017,8.059s3.588,8.017,8.017,8.017c4.428,0,8.017-3.588,8.017-8.017v-0.086
+                                C298.221,208.73,294.633,205.185,290.205,205.185z"
+                                ></path>
+                              </g>
+                            </g>
+                            <g>
+                              <g>
+                                <path
+                                  d="M290.205,307.799c-4.428,0-8.017,3.631-8.017,8.059c0,4.428,3.588,8.017,8.017,8.017c4.428,0,8.017-3.588,8.017-8.017
+                                v-0.086C298.221,311.344,294.633,307.799,290.205,307.799z"
+                                ></path>
+                              </g>
+                            </g>
+                            <g>
+                              <g>
+                                <path
+                                  d="M290.205,410.412c-4.428,0-8.017,3.631-8.017,8.059c0,4.428,3.588,8.017,8.017,8.017c4.428,0,8.017-3.588,8.017-8.017
+                                v-0.085C298.221,413.958,294.633,410.412,290.205,410.412z"
+                                ></path>
+                              </g>
+                            </g>
+                          </svg>
+                        </div>
+                        <div>
+                          <h1 class="text-[15px] font-medium py-4">
+                            FURNITURE
+                          </h1>
+                          <ul class="space-y-4">
+                            <li>
+                              <a href="" class="text-gray-500 text-hover"
+                                >Mantel Clocks</a
+                              >
+                            </li>
+                            <li>
+                              <a href="" class="text-gray-500 text-hover"
+                                >Anniversary</a
+                              >
+                            </li>
+                            <li>
+                              <a href="" class="text-gray-500 text-hover"
+                                >Wall Clocks</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-6 group/cart bg-secondary">
+                      <img
+                        class="h-full"
+                        src="https://woodmart.xtemos.com/wp-content/uploads/2017/01/banner-half-menu-4-1.png"
+                        alt=""
+                      />
+                      <div class="absolute bottom-1 p-5">
+                        <h1 class="text-[22px] font-medium py-2">
+                          MAN’S CASUAL COLLECTION
+                        </h1>
+                        <button
+                          class="hidden group-hover/cart:block bg-black text-[18px] font-medium px-5 text-white py-2"
+                        >
+                          Show more
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
               <!-- Ligthing item  -->
               <div
-                class="flex justify-between items-center border-b px-3 pb-2 border-gray-300 cursor-pointer gap-2"
+                class="flex group/item justify-between bg-hover py-3 items-center border-b px-3 pb-2 border-gray-300 cursor-pointer gap-2"
               >
                 <div class="flex items-center gap-2">
                   <span class="text-[14px] lg:text-[20px]">
@@ -255,10 +2320,145 @@
                   <span class="capitalize">Ligthing</span>
                 </div>
                 <i class="fa-solid fa-angle-right"></i>
+                <div
+                  class="hidden absolute left-[300px] group-hover/item:block bg-white w-[1000px] top-0 p-6 h-full"
+                >
+                  <!-- Ligthing product  modal  -->
+                  <div class="grid grid-cols-4 gap-4">
+                    <div>
+                      <h1 class="text-[15px] font-medium py-4">
+                        OFAS AND ARMCHAIRS
+                      </h1>
+                      <ul class="space-y-4">
+                        <li>
+                          <a href="" class="text-gray-500 text-hover"
+                            >Mantel Clocks</a
+                          >
+                        </li>
+                        <li>
+                          <a href="" class="text-gray-500 text-hover"
+                            >Anniversary</a
+                          >
+                        </li>
+                        <li>
+                          <a href="" class="text-gray-500 text-hover"
+                            >Wall Clocks</a
+                          >
+                        </li>
+                        <li>
+                          <a href="" class="text-gray-500 text-hover"
+                            >Digital</a
+                          >
+                        </li>
+                        <li>
+                          <a href="" class="text-gray-500 text-hover">
+                            Travel and Alarm</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h1 class="text-[15px] font-medium py-4">
+                        CHESTS OF DRAWERS
+                      </h1>
+                      <ul class="space-y-4">
+                        <li>
+                          <a href="" class="text-gray-500 text-hover"
+                            >Mantel Clocks</a
+                          >
+                        </li>
+                        <li>
+                          <a href="" class="text-gray-500 text-hover"
+                            >Anniversary</a
+                          >
+                        </li>
+                        <li>
+                          <a href="" class="text-gray-500 text-hover"
+                            >Wall Clocks</a
+                          >
+                        </li>
+                        <li>
+                          <a href="" class="text-gray-500 text-hover"
+                            >Digital</a
+                          >
+                        </li>
+                        <li>
+                          <a href="" class="text-gray-500 text-hover">
+                            Travel and Alarm</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h1 class="text-[15px] font-medium py-4">
+                        TABLES AND CHAIRS
+                      </h1>
+                      <ul class="space-y-4">
+                        <li>
+                          <a href="" class="text-gray-500 text-hover"
+                            >Mantel Clocks</a
+                          >
+                        </li>
+                        <li>
+                          <a href="" class="text-gray-500 text-hover"
+                            >Anniversary</a
+                          >
+                        </li>
+                        <li>
+                          <a href="" class="text-gray-500 text-hover"
+                            >Wall Clocks</a
+                          >
+                        </li>
+                        <li>
+                          <a href="" class="text-gray-500 text-hover"
+                            >Digital</a
+                          >
+                        </li>
+                        <li>
+                          <a href="" class="text-gray-500 text-hover">
+                            Travel and Alarm</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h1 class="text-[15px] font-medium py-4">
+                        KIDS FURNITURE
+                      </h1>
+                      <ul class="space-y-4">
+                        <li>
+                          <a href="" class="text-gray-500 text-hover"
+                            >Mantel Clocks</a
+                          >
+                        </li>
+                        <li>
+                          <a href="" class="text-gray-500 text-hover"
+                            >Anniversary</a
+                          >
+                        </li>
+                        <li>
+                          <a href="" class="text-gray-500 text-hover"
+                            >Wall Clocks</a
+                          >
+                        </li>
+                        <li>
+                          <a href="" class="text-gray-500 text-hover"
+                            >Digital</a
+                          >
+                        </li>
+                        <li>
+                          <a href="" class="text-gray-500 text-hover">
+                            Travel and Alarm</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </div>
               <!-- Toys item  -->
               <div
-                class="flex justify-between items-center border-b px-3 pb-2 border-gray-300 cursor-pointer gap-2"
+                class="flex group/item justify-between bg-hover py-3 items-center border-b px-3 pb-2 border-gray-300 cursor-pointer gap-2"
               >
                 <div class="flex items-center gap-2">
                   <span class="text-[14px] lg:text-[20px]">
@@ -267,10 +2467,244 @@
                   <span class="capitalize">Toys</span>
                 </div>
                 <i class="fa-solid fa-angle-right"></i>
+                <div
+                  class="hidden absolute left-[300px] group-hover/item:block bg-white w-[1000px] top-0 p-6 h-full"
+                >
+                  <!-- Toys product  modal  -->
+                  <div class="grid grid-cols-4 gap-4">
+                    <div>
+                      <div>
+                        <h1 class="text-[15px] font-medium py-4">FURNITURE</h1>
+                        <ul class="space-y-4">
+                          <li>
+                            <a href="" class="text-gray-500 text-hover"
+                              >Mantel Clocks</a
+                            >
+                          </li>
+                          <li>
+                            <a href="" class="text-gray-500 text-hover"
+                              >Anniversary</a
+                            >
+                          </li>
+                          <li>
+                            <a href="" class="text-gray-500 text-hover"
+                              >Wall Clocks</a
+                            >
+                          </li>
+                          <li>
+                            <a href="" class="text-gray-500 text-hover"
+                              >Digital</a
+                            >
+                          </li>
+                          <li>
+                            <a href="" class="text-gray-500 text-hover">
+                              Travel and Alarm</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h1 class="text-[15px] font-medium py-4">FURNITURE</h1>
+                        <ul class="space-y-4">
+                          <li>
+                            <a href="" class="text-gray-500 text-hover"
+                              >Mantel Clocks</a
+                            >
+                          </li>
+                          <li>
+                            <a href="" class="text-gray-500 text-hover"
+                              >Anniversary</a
+                            >
+                          </li>
+                          <li>
+                            <a href="" class="text-gray-500 text-hover"
+                              >Wall Clocks</a
+                            >
+                          </li>
+                          <li>
+                            <a href="" class="text-gray-500 text-hover"
+                              >Digital</a
+                            >
+                          </li>
+                          <li>
+                            <a href="" class="text-gray-500 text-hover">
+                              Travel and Alarm</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div>
+                      <div>
+                        <div>
+                          <h1 class="text-[15px] font-medium py-4">
+                            FURNITURE
+                          </h1>
+                          <ul class="space-y-4">
+                            <li>
+                              <a href="" class="text-gray-500 text-hover"
+                                >Mantel Clocks</a
+                              >
+                            </li>
+                            <li>
+                              <a href="" class="text-gray-500 text-hover"
+                                >Anniversary</a
+                              >
+                            </li>
+                            <li>
+                              <a href="" class="text-gray-500 text-hover"
+                                >Wall Clocks</a
+                              >
+                            </li>
+                            <li>
+                              <a href="" class="text-gray-500 text-hover"
+                                >Digital</a
+                              >
+                            </li>
+                            <li>
+                              <a href="" class="text-gray-500 text-hover">
+                                Travel and Alarm</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                        <div>
+                          <h1 class="text-[15px] font-medium py-4">
+                            FURNITURE
+                          </h1>
+                          <ul class="space-y-4">
+                            <li>
+                              <a href="" class="text-gray-500 text-hover"
+                                >Mantel Clocks</a
+                              >
+                            </li>
+                            <li>
+                              <a href="" class="text-gray-500 text-hover"
+                                >Anniversary</a
+                              >
+                            </li>
+                            <li>
+                              <a href="" class="text-gray-500 text-hover"
+                                >Wall Clocks</a
+                              >
+                            </li>
+                            <li>
+                              <a href="" class="text-gray-500 text-hover"
+                                >Digital</a
+                              >
+                            </li>
+                            <li>
+                              <a href="" class="text-gray-500 text-hover">
+                                Travel and Alarm</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div>
+                        <div>
+                          <h1 class="text-[15px] font-medium py-4">
+                            FURNITURE
+                          </h1>
+                          <ul class="space-y-4">
+                            <li>
+                              <a href="" class="text-gray-500 text-hover"
+                                >Mantel Clocks</a
+                              >
+                            </li>
+                            <li>
+                              <a href="" class="text-gray-500 text-hover"
+                                >Anniversary</a
+                              >
+                            </li>
+                            <li>
+                              <a href="" class="text-gray-500 text-hover"
+                                >Wall Clocks</a
+                              >
+                            </li>
+                            <li>
+                              <a href="" class="text-gray-500 text-hover"
+                                >Digital</a
+                              >
+                            </li>
+                            <li>
+                              <a href="" class="text-gray-500 text-hover">
+                                Travel and Alarm</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                        <div>
+                          <h1 class="text-[15px] font-medium py-4">
+                            FURNITURE
+                          </h1>
+                          <ul class="space-y-4">
+                            <li>
+                              <a href="" class="text-gray-500 text-hover"
+                                >Mantel Clocks</a
+                              >
+                            </li>
+                            <li>
+                              <a href="" class="text-gray-500 text-hover"
+                                >Anniversary</a
+                              >
+                            </li>
+                            <li>
+                              <a href="" class="text-gray-500 text-hover"
+                                >Wall Clocks</a
+                              >
+                            </li>
+                            <li>
+                              <a href="" class="text-gray-500 text-hover"
+                                >Digital</a
+                              >
+                            </li>
+                            <li>
+                              <a href="" class="text-gray-500 text-hover">
+                                Travel and Alarm</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="relative">
+                        <img
+                          class=""
+                          src="https://woodmart.xtemos.com/wp-content/uploads/2016/09/clocks6_3-430x490.jpg"
+                          alt=""
+                        />
+                        <div
+                          class="bg-primary text-white rounded-full w-[50px] h-[50px] flex justify-center items-center absolute top-2 left-3"
+                        >
+                          <span>75%</span>
+                        </div>
+                      </div>
+                      <h1 class="text-[17px] text-center font-medium py-2">
+                        Ullamcorper arcu elementum clocks
+                      </h1>
+                      <div
+                        class="flex items-center gap-1 text-yellow-500 justify-center"
+                      >
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                      </div>
+                      <p class="text-primary pt-1 text-center">
+                        $4500.000 - $14000
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
               <!-- Head made item  -->
               <div
-                class="flex justify-between items-center border-b px-3 pb-2 border-gray-300 cursor-pointer gap-2"
+                class="flex justify-between bg-hover py-3 items-center border-b px-3 pb-2 border-gray-300 cursor-pointer gap-2"
               >
                 <div class="flex items-center gap-2">
                   <span class="text-[14px] lg:text-[20px]">
@@ -278,11 +2712,10 @@
                   </span>
                   <span class="capitalize">Head made</span>
                 </div>
-                <i class="fa-solid fa-angle-right"></i>
               </div>
               <!-- Minimalism item  -->
               <div
-                class="flex justify-between items-center border-b px-3 pb-2 border-gray-300 cursor-pointer gap-2"
+                class="flex justify-between bg-hover py-3 items-center border-b px-3 pb-2 border-gray-300 cursor-pointer gap-2"
               >
                 <div class="flex items-center gap-2">
                   <span class="text-[14px] lg:text-[20px]">
@@ -290,11 +2723,10 @@
                   </span>
                   <span class="capitalize">Minimalism</span>
                 </div>
-                <i class="fa-solid fa-angle-right"></i>
               </div>
               <!-- Electronices item  -->
               <div
-                class="flex justify-between items-center border-b px-3 pb-2 border-gray-300 cursor-pointer gap-2"
+                class="flex justify-between bg-hover py-3 items-center border-b px-3 pb-2 border-gray-300 cursor-pointer gap-2"
               >
                 <div class="flex items-center gap-2">
                   <span class="text-[14px] lg:text-[20px]">
@@ -302,12 +2734,11 @@
                   </span>
                   <span class="capitalize">Electronics</span>
                 </div>
-                <i class="fa-solid fa-angle-right"></i>
               </div>
 
               <!-- Cars item  -->
               <div
-                class="flex justify-between items-center border-b px-3 pb-2 border-gray-300 cursor-pointer gap-2"
+                class="flex justify-between bg-hover py-3 items-center border-b px-3 pb-2 border-gray-300 cursor-pointer gap-2"
               >
                 <div class="flex items-center gap-2">
                   <span class="text-[14px] lg:text-[20px]">
@@ -315,7 +2746,6 @@
                   </span>
                   <span class="capitalize">Cars</span>
                 </div>
-                <i class="fa-solid fa-angle-right"></i>
               </div>
             </div>
           </div>
@@ -599,7 +3029,9 @@
             <div
               class="pt-2 absolute hidden p-4 left-0 w-full z-[100] bottom-0 group-hover:block overflow-hidden duration-500"
             >
-              <p class="text-[14px] font-normal text-center text-gray-700">
+              <p
+                class="text-[14px] font-normal text-hover duration-300 text-center text-gray-700"
+              >
                 Placerat tempor dolor eu leo ullamcorper et magnis habitant
                 ultrices consectetur arcu nulla mattis fermentum adipiscing a et
                 bibendum sed platea malesuada eget
@@ -672,7 +3104,9 @@
             <div
               class="pt-2 absolute hidden p-4 left-0 w-full z-[100] bottom-0 group-hover:block overflow-hidden duration-500"
             >
-              <p class="text-[14px] font-normal text-center text-gray-700">
+              <p
+                class="text-[14px] font-normal text-hover duration-300 text-center text-gray-700"
+              >
                 Placerat tempor dolor eu leo ullamcorper et magnis habitant
                 ultrices consectetur arcu nulla mattis fermentum adipiscing a et
                 bibendum sed platea malesuada eget
@@ -745,7 +3179,9 @@
             <div
               class="pt-2 absolute hidden p-4 left-0 w-full z-[100] bottom-0 group-hover:block overflow-hidden duration-500"
             >
-              <p class="text-[14px] font-normal text-center text-gray-700">
+              <p
+                class="text-[14px] font-normal text-hover duration-300 text-center text-gray-700"
+              >
                 Placerat tempor dolor eu leo ullamcorper et magnis habitant
                 ultrices consectetur arcu nulla mattis fermentum adipiscing a et
                 bibendum sed platea malesuada eget
@@ -818,7 +3254,9 @@
             <div
               class="pt-2 absolute hidden p-4 left-0 w-full z-[100] bottom-0 group-hover:block overflow-hidden duration-500"
             >
-              <p class="text-[14px] font-normal text-center text-gray-700">
+              <p
+                class="text-[14px] font-normal text-hover duration-300 text-center text-gray-700"
+              >
                 Placerat tempor dolor eu leo ullamcorper et magnis habitant
                 ultrices consectetur arcu nulla mattis fermentum adipiscing a et
                 bibendum sed platea malesuada eget
@@ -891,7 +3329,9 @@
             <div
               class="pt-2 absolute hidden p-4 left-0 w-full z-[100] bottom-0 group-hover:block overflow-hidden duration-500"
             >
-              <p class="text-[14px] font-normal text-center text-gray-700">
+              <p
+                class="text-[14px] font-normal text-hover duration-300 text-center text-gray-700"
+              >
                 Placerat tempor dolor eu leo ullamcorper et magnis habitant
                 ultrices consectetur arcu nulla mattis fermentum adipiscing a et
                 bibendum sed platea malesuada eget
@@ -964,7 +3404,9 @@
             <div
               class="pt-2 absolute hidden p-4 left-0 w-full z-[100] bottom-0 group-hover:block overflow-hidden duration-500"
             >
-              <p class="text-[14px] font-normal text-center text-gray-700">
+              <p
+                class="text-[14px] font-normal text-hover duration-300 text-center text-gray-700"
+              >
                 Placerat tempor dolor eu leo ullamcorper et magnis habitant
                 ultrices consectetur arcu nulla mattis fermentum adipiscing a et
                 bibendum sed platea malesuada eget
@@ -1037,7 +3479,9 @@
             <div
               class="pt-2 absolute hidden p-4 left-0 w-full z-[100] bottom-0 group-hover:block overflow-hidden duration-500"
             >
-              <p class="text-[14px] font-normal text-center text-gray-700">
+              <p
+                class="text-[14px] font-normal text-hover duration-300 text-center text-gray-700"
+              >
                 Placerat tempor dolor eu leo ullamcorper et magnis habitant
                 ultrices consectetur arcu nulla mattis fermentum adipiscing a et
                 bibendum sed platea malesuada eget
@@ -1110,7 +3554,9 @@
             <div
               class="pt-2 absolute hidden p-4 left-0 w-full z-[100] bottom-0 group-hover:block overflow-hidden duration-500"
             >
-              <p class="text-[14px] font-normal text-center text-gray-700">
+              <p
+                class="text-[14px] font-normal text-hover duration-300 text-center text-gray-700"
+              >
                 Placerat tempor dolor eu leo ullamcorper et magnis habitant
                 ultrices consectetur arcu nulla mattis fermentum adipiscing a et
                 bibendum sed platea malesuada eget
@@ -1183,7 +3629,9 @@
             <div
               class="pt-2 absolute hidden p-4 left-0 w-full z-[100] bottom-0 group-hover:block overflow-hidden duration-500"
             >
-              <p class="text-[14px] font-normal text-center text-gray-700">
+              <p
+                class="text-[14px] font-normal text-hover duration-300 text-center text-gray-700"
+              >
                 Placerat tempor dolor eu leo ullamcorper et magnis habitant
                 ultrices consectetur arcu nulla mattis fermentum adipiscing a et
                 bibendum sed platea malesuada eget
