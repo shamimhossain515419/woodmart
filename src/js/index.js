@@ -1,5 +1,15 @@
-$(".responsive").slick({
-  dots: true,
+$(".heroSlider").slick({
+  dots: false,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 1,
+  nextArrow: $(".next-arrow"),
+  prevArrow: $(".prev-arrow"),
+  autoplay: true,
+  autoplaySpeed: 2000,
+});
+$(".productSlider").slick({
+  dots: false,
   infinite: false,
   speed: 300,
   slidesToShow: 1,
@@ -9,92 +19,49 @@ $(".responsive").slick({
   autoplaySpeed: 2000,
 });
 
-// $('.ourTem').slick({
-//   dots: true,
-//   speed: 300,
-//   slidesToShow: 4,
-//   slidesToScroll: 1,
-//   centerPadding: "24px",
-//   infinite: true,
-//   nextArrow: false,
-//   prevArrow: false,
-//   autoplay: true,
-//   autoplaySpeed: 2000,
-//   responsive: [
-//     {
-//       breakpoint: 1400,
-//       settings: {
-//         slidesToShow: 4,
-//         slidesToScroll: 4,
-//         infinite: true,
-//         dots: true
-//       }
-//     },
-//     {
-//       breakpoint: 1024,
-//       settings: {
-//         slidesToShow: 3,
-//         slidesToScroll: 3,
-//         infinite: true,
-//         dots: true
-//       }
-//     },
-//     {
-//       breakpoint: 654,
-//       settings: {
-//         slidesToShow: 2,
-//         slidesToScroll: 2
-//       }
-//     },
-//     {
-//       breakpoint: 480,
-//       settings: {
-//         slidesToShow: 1,
-//         slidesToScroll: 1
-//       }
-//     }]
+//  modal javascript code
+
+const openModalBtn = document.getElementById("openModalBtn");
+const closeModalBtn = document.getElementById("closeModalBtn");
+const modal = document.getElementById("modal");
+
+openModalBtn.addEventListener("click", () => {
+  modal.classList.remove("hidden");
+});
+
+closeModalBtn.addEventListener("click", () => {
+  modal.classList.add("hidden");
+});
+
+// Close modal when clicking outside of it
+modal.addEventListener("click", (e) => {
+  if (e.target === modal) {
+    modal.classList.add("hidden");
+  }
+});
+
+// modal tab code
+
+const menuTab = document.getElementById("menuTab");
+const categoryTab = document.getElementById("categoryTab");
+const menuContent = document.getElementById("menuContent");
+const categoryContent = document.getElementById("categoryContent");
+
+menuTab.onclick = function () {
+  console.log("first");
+};
+
+// menuTab.addEventListener("click", () => {
+// menuTab.classList.add("activeTab");
+// categoryTab.classList.remove("activeTab");
+// menuContent.classList.remove("hidden");
+// categoryContent.classList.add("hidden");
 // });
 
-// $('.testimonials').slick({
-
-//   infinite: false,
-//   speed: 300,
-//   slidesToShow: 3,
-//   slidesToScroll: 3,
-//   prevArrow: false,
-//   nextArrow: false,
-//   autoplay: true,
-//   responsive: [
-//     {
-//       breakpoint: 1400,
-//       settings: {
-//         slidesToShow: 3,
-//         slidesToScroll: 3,
-//         infinite: true,
-//         dots: true
-//       }
-//     },
-//     {
-//       breakpoint: 1024,
-//       settings: {
-//         slidesToShow: 2,
-//         slidesToScroll: 2,
-//         infinite: true,
-//         dots: true
-//       }
-//     },
-//     {
-//       breakpoint: 654,
-//       settings: {
-//         slidesToShow: 1,
-//         slidesToScroll: 1
-//       }
-//     },
-//     {
-//       breakpoint: 480,
-//       settings: {
-//         slidesToShow: 1,
-//         slidesToScroll: 1
-//       }
-//     }]
+// categoryTab.addEventListener("click", () => {
+//     console.log("first");
+//   categoryTab.classList.add("activeTab");
+//   menuTab.classList.remove("activeTab");
+//   categoryContent.classList.remove("hidden");
+//   menuContent.classList.add("hidden");
 // });
