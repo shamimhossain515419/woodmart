@@ -133,6 +133,52 @@ $(".blosSlider").slick({
   ],
 });
 
+// demo prodcut slider
+$(".demoSlider").slick({
+  dots: false,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  nextArrow: $(".demo-next-arrow"),
+  prevArrow: $(".demo-prev-arrow"),
+  autoplay: true,
+  autoplaySpeed: 2000,
+  responsive: [
+    {
+      breakpoint: 1400,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true,
+      },
+    },
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true,
+      },
+    },
+    {
+      breakpoint: 654,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+});
+
 //  modal javascript code
 
 const openModalBtn = document.getElementById("openModalBtn");
