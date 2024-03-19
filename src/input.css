@@ -35,3 +35,24 @@ body {
 .border-color {
   border-color: var(--main-color);
 }
+
+/* scroll bar design  */
+
+.filterColorScroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+.filterColorScroll::-webkit-scrollbar-track {
+  background: #777777;
+}
+
+/* Handle */
+.filterColorScroll::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+.filterColorScroll::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

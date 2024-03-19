@@ -1,0 +1,1552 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WoodMart</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- links   -->
+    <link rel="stylesheet" href="./slick/slick.css" />
+    <link rel="stylesheet" href="./slick/slick.css.map" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/animation.css" />
+    <link rel="stylesheet" href="./input.css" />
+    <link rel="stylesheet" href="./output.css" />
+    <script src="./js/jquery-3.7.1.min.js"></script>
+  </head>
+
+  <body>
+    <!-- top header  -->
+    <div class="bg-primary">
+      <div class="container py-3">
+        <div class="flex justify-center xl:justify-between items-center gap-2">
+          <div class="hidden xl:flex items-center gap-3 text-white">
+            <a href="" class="">ENGLISH</a>
+            <a href="" class="">COUNTRY</a>
+            <a href="" class="">FREE SHIPPING FOR ALL ORDERS OF $150</a>
+          </div>
+          <div class="flex items-center gap-6 text-white">
+            <div class="flex items-center gap-4 text-white">
+              <a href=""> <i class="fa-brands fa-facebook-f"></i> </a>
+              <a href=""> <i class="fa-brands fa-x-twitter"></i> </a>
+              <a href=""> <i class="fa-brands fa-instagram"></i> </a>
+              <a href=""> <i class="fa-brands fa-youtube"></i> </a>
+            </div>
+            <div class="hidden xl:block">
+              <a href="" class="">NEWSLETTER</a>
+              <a href="" class="">CONTACT US</a>
+              <a href="" class="">FAQS</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- header section  -->
+    <header class="sticky top-0 w-full bg-white py-3 z-[500]">
+      <div class="container">
+        <nav
+          class="flex justify-between items-center gap-4 lg:gap-6 xl:gap-12 py-4"
+        >
+          <!-- responsive menu  -->
+          <div id="openModalBtn" class="flex xl:hidden items-center gap-2">
+            <i class="fa-solid fa-bars"></i>
+            <span class="hidden sm:block">menu</span>
+          </div>
+          <div>
+            <a
+              href="/"
+              class="text-[20px] lg:text-[30px] xl:text-[45px] font-bold"
+            >
+              woodmart
+            </a>
+          </div>
+          <!-- lx device show  manu  -->
+          <div
+            class="hidden xl:block border w-full border-[#20202071] rounded-[4px]"
+          >
+            <div class="flex items-center gap-2 lg:gap-4">
+              <div class="p-[10px] w-full">
+                <input
+                  class="outline-none w-full placeholder:text-[17px]"
+                  type="search"
+                  placeholder="Search for products"
+                />
+              </div>
+              <div
+                class="border-l-[1px] min-w-[250px] border-[#20202056] p-[10px]"
+              >
+                <select
+                  class="block text-gray-700 w-full px-4 pr-8 leading-tight bg-white rounded-md focus:outline-none focus:bg-white focus:border-gray-500"
+                >
+                  <option value="1">Select Option</option>
+                  <option value="2">Option 2</option>
+                  <option value="3">Option 3</option>
+                  <option value="4">Option 4</option>
+                  <option value="5">Option 5</option>
+                </select>
+              </div>
+              <div
+                class="border-l-[1px] px-4 cursor-pointer text-gray-700 border-[#20202056] p-[10px]"
+              >
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+            </div>
+          </div>
+          <div class="hidden xl:flex items-center gap-2 lg:gap-6">
+            <!-- login and register link  -->
+            <div class="w-[150px]">
+              <a
+                href=""
+                class="text-[12px] text-gray-700 uppercase hover:opacity-80 duration-200 lg:text-[18px] font-medium"
+                >Login/ register</a
+              >
+            </div>
+
+            <div
+              class="flex hover:opacity-80 duration-200 cursor-pointer items-center gap-5 lg:gap-10"
+            >
+              <!-- wishlist cart  -->
+              <div class="text-[17px] lg:text-[22px]">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <div
+                class="text-[17px] hover:opacity-80 duration-200 cursor-pointer relative lg:text-[22px]"
+              >
+                <i class="fa-solid fa-screwdriver-wrench relative"></i>
+                <span
+                  class="text-[12px] absolute -top-2 bg-[#83B735] px-1 rounded-full text-white"
+                  >0</span
+                >
+              </div>
+              <div
+                class="flex hover:opacity-80 cursor-pointer duration-200 items-center gap-4"
+              >
+                <div class="relative text-[17px] lg:text-[22px]">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                  <span
+                    class="text-[12px] absolute -top-2 bg-[#83B735] px-1 rounded-full text-white"
+                    >0</span
+                  >
+                </div>
+                <span>$0.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="xl:hidden">
+            <div class="relative text-[17px] lg:text-[22px]">
+              <i class="fa-solid fa-bag-shopping"></i>
+              <span
+                class="text-[12px] absolute -top-2 bg-[#83B735] px-1 rounded-full text-white"
+                >0</span
+              >
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- top category   -->
+    <div class="hidden xl:block border-y-[2px] shadow-md border-[#0000001d]">
+      <div class="container flex relative items-center justify-between gap-2">
+        <div class="flex items-center gap-4">
+          <div class="w-[300px]">
+            <div
+              class="bg-primary flex items-center w-[300px] justify-between text-white px-3 py-4"
+            >
+              <div class="flex items-center gap-2">
+                <p class="text-[23px]"><i class="fa-solid fa-bars"></i></p>
+                <p class="text-[14px] lg:text-[17px]">BROWSE CATEGORIES</p>
+              </div>
+              <i class="fa-solid text-[20px] fa-angle-down"></i>
+            </div>
+          </div>
+          <div>
+            <!-- page link  -->
+            <ul class="flex items-center gap-7">
+              <li class="font-medium text-[14px] lg:text-[18px] uppercase">
+                <a href="">Home </a>
+              </li>
+              <li
+                class="text-[14px] text-primary group text-hover duration-300 lg:text-[18px] uppercase"
+              >
+                <a href="" class="font-medium">Shop</a>
+                <!-- shop modal  -->
+                <div
+                  class="hidden capitalize border mt-[26px] border-gray-300 text-gray-700 group-hover:block absolute top-10 z-[100] bg-white"
+                >
+                  <div class="grid grid-cols-3 gap-8">
+                    <div class="p-6">
+                      <h1 class="text-[18px] pt-4 font-semibold uppercase">
+                        SHOP LAYOUTS
+                      </h1>
+                      <ul class="space-y-3 mt-4">
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Filters area</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href=""> Hidden sidebar</a>
+                        </li>
+
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Small categories</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">menu</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Products list</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href=""> view With background</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Category</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">description Only</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">categories Header</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href=""> overlap Infinit</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">scrolling</a>
+                        </li>
+                        <li class="text-[14px] font-normal">
+                          <a href="">Load more button</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="p-6">
+                      <h1 class="text-[18px] pt-4 font-semibold uppercase">
+                        CUSTOM LAYOUTS
+                      </h1>
+                      <ul class="space-y-3 mt-4">
+                        <li class="text-[14px] font-normal">
+                          <a href="">Post example 1#</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Post example 2#</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Post example 3#</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Post example 5#</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Post example 5#</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Post example 6#</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Post example 7#</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Post example 8#</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Post example 9#</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Post example 10#</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Post example 1#</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Post example 1#</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="bg-[#F6F6F6] text-center p-6">
+                      <div class="">
+                        <div class="max-h-[350px]">
+                          <img
+                            class="w-full h-full"
+                            src="https://woodmart.b-cdn.net/wp-content/uploads/2023/04/advanced-variable-products-with-swatches.png.webp"
+                            alt=""
+                          />
+                        </div>
+                        <h1 class="text-[18px] font-medium py-3">
+                          Advanced Variable products with swatches
+                        </h1>
+                        <p class="text-[14px]">
+                          Products variations colors and images without any
+                          additional plugins.
+                        </p>
+                        <button
+                          class="bg-primary text-white my-4 px-10 py-2 rounded-[20px] text-[19px] font-medium"
+                        >
+                          View more
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="text-[14px] group text-hover duration-300 lg:text-[18px] uppercase"
+              >
+                <!-- Blog  modal  -->
+                <a href="" class="font-medium"> Blog</a>
+                <div
+                  class="hidden capitalize border mt-[26px] border-gray-300 text-gray-700 group-hover:block absolute top-10 z-[100] bg-white"
+                >
+                  <div class="grid grid-cols-3 gap-8">
+                    <div class="p-6">
+                      <h1 class="text-[18px] pt-4 font-semibold uppercase">
+                        BLOG TYPES
+                      </h1>
+                      <ul class="space-y-3 mt-4">
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Alternative</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Small images</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Blog chess</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Masonry grid</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Meta on image</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">FEATURE</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Category</a>
+                        </li>
+
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href=""> overlap Infinit</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Blog flat</a>
+                        </li>
+                        <li class="text-[14px] font-normal">
+                          <a href="">Blog mask</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="p-6">
+                      <h1 class="text-[18px] pt-4 font-semibold uppercase">
+                        SINGLE POSTS
+                      </h1>
+                      <ul class="space-y-3 mt-4">
+                        <li class="text-[14px] font-normal">
+                          <a href="">Post example 1#</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Post example 2#</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Post example 3#</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Post example 5#</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Post example 5#</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Post example 6#</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Post example 7#</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Post example 8#</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Post example 9#</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Post example 10#</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="bg-[#F6F6F6] p-6">
+                      <h1 class="text-[18px] font-medium py-3">RECENT POSTS</h1>
+                      <div class="space-y-3">
+                        <div
+                          class="flex items-center border-b border-[#0000001d] gap-3 py-1"
+                        >
+                          <div class="w-[90px] h-[70px]">
+                            <img
+                              class="w-full h-full"
+                              src="https://woodmart.xtemos.com/wp-content/uploads/2016/07/blog-12-75x65.jpg"
+                              alt=""
+                            />
+                          </div>
+                          <div>
+                            <h3 class="text-[14px]">
+                              A companion for extra sleeping
+                            </h3>
+                            <span class="text-[14px] opacity-60"
+                              >July 23, 2016 1 Comment</span
+                            >
+                          </div>
+                        </div>
+                        <div
+                          class="flex items-center border-b border-[#0000001d] gap-3 py-1"
+                        >
+                          <div class="w-[90px] h-[70px]">
+                            <img
+                              class="w-full h-full"
+                              src="https://woodmart.xtemos.com/wp-content/uploads/2016/07/blog-11-75x65.jpg"
+                              alt=""
+                            />
+                          </div>
+                          <div>
+                            <h3 class="text-[14px]">
+                              A companion for extra sleeping
+                            </h3>
+                            <span class="text-[14px] opacity-60"
+                              >July 23, 2016 1 Comment</span
+                            >
+                          </div>
+                        </div>
+                        <div
+                          class="flex items-center border-b border-[#0000001d] gap-3 py-1"
+                        >
+                          <div class="w-[90px] h-[70px]">
+                            <img
+                              class="w-full h-full"
+                              src="https://woodmart.xtemos.com/wp-content/uploads/2016/07/blog-17-75x65.jpg"
+                              alt=""
+                            />
+                          </div>
+                          <div>
+                            <h3 class="text-[14px]">
+                              A companion for extra sleeping
+                            </h3>
+                            <span class="text-[14px] opacity-60"
+                              >July 23, 2016 1 Comment</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="text-[14px] group text-hover duration-300 lg:text-[18px] uppercase"
+              >
+                <!-- Pages modal  -->
+                <a href="" class="font-medium"> Pages</a>
+                <div
+                  class="hidden capitalize border mt-[26px] border-gray-300 text-gray-700 lg:w-[70%] group-hover:block absolute top-10 z-[100] bg-white"
+                >
+                  <div class="grid grid-cols-4 w-full gap-8 p-6">
+                    <div class="">
+                      <h1 class="text-[18px] pt-4 font-semibold uppercase">
+                        DEMO LAYOUTS
+                      </h1>
+                      <ul class="space-y-3 mt-4">
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Categories</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Basic</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Parallax</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Infinite</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Scrolling</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Video </a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href=""> Lookbook </a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href=""> Video </a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href=""> Landing </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="">
+                      <h1 class="text-[18px] pt-4 font-semibold uppercase">
+                        PRE-BUILT PAGE
+                      </h1>
+                      <ul class="space-y-3 mt-4">
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Alternative</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Small images</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Blog chess</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Masonry grid</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Meta on image</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">FEATURE</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Category</a>
+                        </li>
+
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href=""> overlap Infinit</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Blog flat</a>
+                        </li>
+                        <li class="text-[14px] font-normal">
+                          <a href="">Blog mask</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="">
+                      <h1 class="text-[18px] pt-4 font-semibold uppercase">
+                        Portfolio
+                      </h1>
+                      <ul class="space-y-3 mt-4">
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Alternative</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Small images</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Blog chess</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Masonry grid</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Meta on image</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">FEATURE</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Category</a>
+                        </li>
+
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href=""> overlap Infinit</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Blog flat</a>
+                        </li>
+                        <li class="text-[14px] font-normal">
+                          <a href="">Blog mask</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="">
+                      <h1 class="text-[18px] pt-4 font-semibold uppercase">
+                        HEADERS
+                      </h1>
+                      <ul class="space-y-3 mt-4">
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Alternative</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Small images</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Blog chess</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Masonry grid</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Meta on image</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">FEATURE</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Category</a>
+                        </li>
+
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href=""> overlap Infinit</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Blog flat</a>
+                        </li>
+                        <li class="text-[14px] font-normal">
+                          <a href="">Blog mask</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="text-[14px] group text-hover duration-300 lg:text-[18px] uppercase"
+              >
+                <!-- Element  page  -->
+                <a href="" class="font-medium"> Element</a>
+                <div
+                  class="hidden capitalize border mt-[26px] border-gray-300 text-gray-700 lg:w-[70%] group-hover:block absolute top-10 z-[100] bg-white"
+                >
+                  <div class="grid grid-cols-4 w-full gap-8 p-6">
+                    <div class="">
+                      <h1 class="text-[18px] pt-4 font-semibold uppercase">
+                        <a href="">THEME ELEMENTS</a>
+                      </h1>
+                      <ul class="space-y-3 mt-4">
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Categories</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Basic</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Parallax</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Infinite</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Scrolling</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Video </a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href=""> Lookbook </a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href=""> Video </a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href=""> Landing </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="">
+                      <h1 class="text-[18px] pt-4 font-semibold uppercase">
+                        <a href="">THEME ELEMENTS</a>
+                      </h1>
+                      <ul class="space-y-3 mt-4">
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Alternative</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Small images</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Blog chess</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Masonry grid</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Meta on image</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">FEATURE</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Category</a>
+                        </li>
+
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href=""> overlap Infinit</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Blog flat</a>
+                        </li>
+                        <li class="text-[14px] font-normal">
+                          <a href="">Blog mask</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="">
+                      <h1 class="text-[18px] pt-4 font-semibold uppercase">
+                        <a href="">THEME ELEMENTS</a>
+                      </h1>
+                      <ul class="space-y-3 mt-4">
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Alternative</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Small images</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Blog chess</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Masonry grid</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Meta on image</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">FEATURE</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Category</a>
+                        </li>
+
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href=""> overlap Infinit</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Blog flat</a>
+                        </li>
+                        <li class="text-[14px] font-normal">
+                          <a href="">Blog mask</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="">
+                      <h1 class="text-[18px] pt-4 font-semibold uppercase">
+                        <a href="">WOOCOMMERCE</a>
+                      </h1>
+                      <ul class="space-y-3 mt-4">
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Alternative</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Small images</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Blog chess</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Masonry grid</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Meta on image</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">FEATURE</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Category</a>
+                        </li>
+
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href=""> overlap Infinit</a>
+                        </li>
+                        <li
+                          class="text-[14px] font-normal text-hover duration-300"
+                        >
+                          <a href="">Blog flat</a>
+                        </li>
+                        <li class="text-[14px] font-normal">
+                          <a href="">Blog mask</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="text-[14px] text-hover duration-300 lg:text-[18px] uppercase"
+              >
+                <a href="" class="font-medium"> Buy</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex items-center gap-2">
+          <p class="text-[#83b735]">SPECIAL OFFER</p>
+          <p class="border-r-2 p-2 border-[#00000091]"></p>
+          <p>PURCHASE THEME</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- mobile responsive modal  -->
+    <div
+      id="modal"
+      class="fixed h-full w-full bg-[#000000e0] z-[200] inset-0 overflow-y-auto hidden"
+    >
+      <div class="bg-white h-full max-w-[350px]">
+        <!-- search field  -->
+        <div
+          class="shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] p-4 flex justify-between items-center gap-4"
+        >
+          <input
+            class="outline-none w-full border-0"
+            type="text"
+            placeholder="Search for product"
+          />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <!-- menu tab  -->
+        <div class="grid grid-cols-2">
+          <div
+            id="menuTab"
+            class="text-center menuTab bg-[#f5f5f568] p-4 cursor-pointer activeTab"
+          >
+            <p class="uppercase text-gray-600 text-[16px] font-semibold">
+              Menu
+            </p>
+          </div>
+          <div
+            id="categoryTab"
+            class="text-center bg-[#f5f5f568] p-4 cursor-pointer"
+          >
+            <p class="uppercase text-gray-600 text-[16px] font-semibold">
+              Category
+            </p>
+          </div>
+        </div>
+
+        <div id="menuContent" class="content mt-4">
+          <div>
+            <ul class=" ">
+              <li
+                class="border-b px-4 py-3 text-hover text-[17px] duration-300 border-gray-300"
+              >
+                <a href="">HOME</a>
+              </li>
+              <li
+                class="border-b px-4 py-3 text-hover text-[17px] duration-300 border-gray-300"
+              >
+                <a href="">DEMOS</a>
+              </li>
+              <li
+                class="border-b px-4 py-3 text-hover text-[17px] duration-300 border-gray-300"
+              >
+                <a href="">SHOP</a>
+              </li>
+              <li
+                class="border-b px-4 py-3 text-hover text-[17px] duration-300 border-gray-300"
+              >
+                <a href="">BLOG</a>
+              </li>
+              <li
+                class="border-b px-4 py-3 text-hover text-[17px] duration-300 border-gray-300"
+              >
+                <a href="">PORTFOLIO</a>
+              </li>
+              <li
+                class="border-b px-4 py-3 space-x-2 text-hover text-[17px] duration-300 border-gray-300"
+              >
+                <i class="fa-regular fa-heart"></i>
+                <a href="">Wishlist</a>
+              </li>
+              <li
+                class="border-b px-4 py-3 space-x-2 text-hover text-[17px] duration-300 border-gray-300"
+              >
+                <i class="fa-solid fa-compress"></i>
+                <a href="">Compate</a>
+              </li>
+              <li
+                class="border-b px-4 py-3 space-x-2 text-hover text-[17px] duration-300 border-gray-300"
+              >
+                <i class="fa-regular fa-user"></i>
+                <a href="">Register/login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="categoryContent" class="content mt-4 hidden">
+          <div>
+            <ul class=" ">
+              <li
+                class="border-b px-4 py-3 text-hover text-[17px] duration-300 border-gray-300"
+              >
+                <a href="">FURNITURE</a>
+              </li>
+              <li
+                class="border-b px-4 py-3 text-hover text-[17px] duration-300 border-gray-300"
+              >
+                <a href="">LIGHTING</a>
+              </li>
+              <li
+                class="border-b px-4 py-3 text-hover text-[17px] duration-300 border-gray-300"
+              >
+                <a href="">ACCESSORIES</a>
+              </li>
+              <li
+                class="border-b px-4 py-3 text-hover text-[17px] duration-300 border-gray-300"
+              >
+                <a href="">CLOCKS</a>
+              </li>
+              <li
+                class="border-b px-4 py-3 text-hover text-[17px] duration-300 border-gray-300"
+              >
+                <a href="">COOKING</a>
+              </li>
+              <li
+                class="border-b px-4 py-3 space-x-2 text-hover text-[17px] duration-300 border-gray-300"
+              >
+                <i class="fa-regular fa-heart"></i>
+                <a href="">ELECTRONICS</a>
+              </li>
+              <li
+                class="border-b px-4 py-3 space-x-2 text-hover text-[17px] duration-300 border-gray-300"
+              >
+                <i class="fa-solid fa-compress"></i>
+                <a href="">MINIMALISM</a>
+              </li>
+              <li
+                class="border-b px-4 py-3 space-x-2 text-hover text-[17px] duration-300 border-gray-300"
+              >
+                <i class="fa-regular fa-user"></i>
+                <a href="">FASHION</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- close modal   -->
+      <div id="closeModalBtn" class="w-full"></div>
+    </div>
+
+    <!-- shop banner  -->
+
+    <div
+      class="bg-[url('https://woodmart.b-cdn.net/wp-content/uploads/2021/04/blog-title-bg6-opt.jpg')] w-full min-h-[300px] object-contain"
+    >
+      <div class="pt-16 pb-10">
+        <div class="text-center text-white">
+          <h1 class="text-[44px] font-bold">Shop</h1>
+          <p id="shopBannerCategory" class="lg:hidden space-x-2">
+            <span>Categorys</span> <i class="fa-solid fa-chevron-down"></i>
+          </p>
+        </div>
+        <div
+          id="shopBannerContent"
+          class="flex lg:justify-center items-center text-white h-full px-4"
+        >
+          <div class="">
+            <div class="lg:flex items-center gap-7">
+              <div class="py-3 flex group cursor-pointer items-center gap-2">
+                <img
+                  class="w-[50px] h-[50px]"
+                  src="https://woodmart.xtemos.com/wp-content/uploads/2017/01/clock.svg"
+                  alt=""
+                />
+                <div>
+                  <h1
+                    className=" relative duration-500  text-[20px] font-medium uppercase"
+                  >
+                    CLOCKS
+                    <span
+                      className="ease absolute left-0  -bottom-1  h-0 w-0 border-b border-color  transition-all duration-200 group-hover:w-full"
+                    ></span>
+                  </h1>
+                  <p class="text-[14px] font-normal">28 Product</p>
+                </div>
+              </div>
+              <div class="py-3 flex group cursor-pointer items-center gap-2">
+                <img
+                  class="w-[50px] h-[50px]"
+                  src="https://woodmart.xtemos.com/wp-content/uploads/2017/01/light-bulb.svg"
+                  alt=""
+                />
+                <div>
+                  <h1
+                    className=" relative duration-500  text-[20px] font-medium uppercase "
+                  >
+                    lighting
+                    <span
+                      className="ease absolute left-0  -bottom-1  h-0 w-0 border-b border-color  transition-all duration-200 group-hover:w-full"
+                    ></span>
+                  </h1>
+                  <p class="text-[14px] font-normal">28 Product</p>
+                </div>
+              </div>
+              <div class="py-3 flex group cursor-pointer items-center gap-2">
+                <img
+                  class="w-[50px] h-[50px]"
+                  src="https://woodmart.xtemos.com/wp-content/uploads/2017/01/chair.svg"
+                  alt=""
+                />
+                <div>
+                  <h1
+                    className=" relative duration-500  text-[20px] font-medium  uppercase "
+                  >
+                    Furniture
+                    <span
+                      className="ease absolute left-0  -bottom-1  h-0 w-0 border-b border-color  transition-all duration-200 group-hover:w-full"
+                    ></span>
+                  </h1>
+                  <p class="text-[14px] font-normal">28 Product</p>
+                </div>
+              </div>
+              <div class="py-3 flex group cursor-pointer items-center gap-2">
+                <img
+                  class="w-[50px] h-[50px]"
+                  src="https://woodmart.xtemos.com/wp-content/uploads/2017/01/flower.svg"
+                  alt=""
+                />
+                <div>
+                  <h1
+                    className=" relative duration-500  text-[20px] font-medium  uppercase "
+                  >
+                    ACCESSORIES
+                    <span
+                      className="ease absolute left-0  -bottom-1  h-0 w-0 border-b border-color  transition-all duration-200 group-hover:w-full"
+                    ></span>
+                  </h1>
+                  <p class="text-[14px] font-normal">28 Product</p>
+                </div>
+              </div>
+              <div class="py-3 flex group cursor-pointer items-center gap-2">
+                <img
+                  class="w-[50px] h-[50px]"
+                  src="https://woodmart.xtemos.com/wp-content/uploads/2017/01/knives.svg"
+                  alt=""
+                />
+                <div>
+                  <h1
+                    className=" relative duration-500  text-[20px] font-medium  uppercase "
+                  >
+                    Cooking
+                    <span
+                      className="ease absolute left-0  -bottom-1  h-0 w-0 border-b border-color  transition-all duration-200 group-hover:w-full"
+                    ></span>
+                  </h1>
+                  <p class="text-[14px] font-normal">28 Product</p>
+                </div>
+              </div>
+              <div class="py-3 flex group cursor-pointer items-center gap-2">
+                <img
+                  class="w-[50px] h-[50px]"
+                  src="https://woodmart.xtemos.com/wp-content/uploads/2017/01/rocking-horse.svg"
+                  alt=""
+                />
+                <div>
+                  <h1
+                    className=" relative duration-500  text-[20px] font-medium  uppercase "
+                  >
+                    Toys
+                    <span
+                      className="ease absolute left-0  -bottom-1  h-0 w-0 border-b border-color  transition-all duration-200 group-hover:w-full"
+                    ></span>
+                  </h1>
+                  <p class="text-[14px] font-normal">28 Product</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FILTER BY PRICE  -->
+
+    <div class="container">
+      <div class="flex items-start gap-3 pt-10">
+        <div class="w-[25%]">
+          <div>
+            <h1 class="text-[19px] text-gray-900 font-medium">
+              FILTER BY PRICE
+            </h1>
+
+            <div class="pr-3">
+              <!-- price rang section  -->
+              <div class="py-5 flex justify-between items-center gap-4">
+                <h1 class="text-gray-800">
+                  Price: <span class="text-black"> $0 — $8,200</span>
+                </h1>
+                <button
+                  class="uppercase text-[15px] font-medium tracking-[1px] py-2 px-4 bg-secondary"
+                >
+                  Filter
+                </button>
+              </div>
+              <span class="border-b block border-gray-300 mt-3"></span>
+              <!-- filter color    -->
+              <div class="py-4">
+                <h1 class="text-[19px] text-gray-900 font-medium">
+                  FILTER BY COLOR
+                </h1>
+                <div
+                  class="py-4 pr-4 space-y-4 max-h-[200px] filterColorScroll overflow-y-scroll"
+                >
+                  <div
+                    class="flex group justify-between items-center gap-4 cursor-pointer"
+                  >
+                    <div class="flex items-center gap-2">
+                      <div
+                        class="bg-blue-700 flex text-white justify-center items-center w-[30px] h-[30px] rounded-full"
+                      >
+                        <i
+                          class="fa-solid fa-check hidden group-hover:block"
+                        ></i>
+                      </div>
+                      <p class="text-gray-700 capitalize">blue</p>
+                    </div>
+                    <div
+                      class="border group-hover:bg-[#83b735] group-hover:text-white group-hover:border-none border-gray-700 rounded-2xl px-3"
+                    >
+                      <p>25</p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex group justify-between items-center gap-4 cursor-pointer"
+                  >
+                    <div class="flex items-center gap-2">
+                      <div
+                        class="bg-green-700 flex text-white justify-center items-center w-[30px] h-[30px] rounded-full"
+                      >
+                        <i
+                          class="fa-solid fa-check hidden group-hover:block"
+                        ></i>
+                      </div>
+                      <p class="text-gray-700 capitalize">green</p>
+                    </div>
+                    <div
+                      class="border group-hover:bg-[#83b735] group-hover:text-white group-hover:border-none border-gray-700 rounded-2xl px-3"
+                    >
+                      <p>25</p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex group justify-between items-center gap-4 cursor-pointer"
+                  >
+                    <div class="flex items-center gap-2">
+                      <div
+                        class="bg-yellow-700 flex text-white justify-center items-center w-[30px] h-[30px] rounded-full"
+                      >
+                        <i
+                          class="fa-solid fa-check hidden group-hover:block"
+                        ></i>
+                      </div>
+                      <p class="text-gray-700 capitalize">yellow</p>
+                    </div>
+                    <div
+                      class="border group-hover:bg-[#83b735] group-hover:text-white group-hover:border-none border-gray-700 rounded-2xl px-3"
+                    >
+                      <p>77</p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex group justify-between items-center gap-4 cursor-pointer"
+                  >
+                    <div class="flex items-center gap-2">
+                      <div
+                        class="bg-black flex text-white justify-center items-center w-[30px] h-[30px] rounded-full"
+                      >
+                        <i
+                          class="fa-solid fa-check hidden group-hover:block"
+                        ></i>
+                      </div>
+                      <p class="text-gray-700 capitalize">black</p>
+                    </div>
+                    <div
+                      class="border group-hover:bg-[#83b735] group-hover:text-white group-hover:border-none border-gray-700 rounded-2xl px-3"
+                    >
+                      <p>12</p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex group justify-between items-center gap-4 cursor-pointer"
+                  >
+                    <div class="flex items-center gap-2">
+                      <div
+                        class="bg-purple-700 flex text-white justify-center items-center w-[30px] h-[30px] rounded-full"
+                      >
+                        <i
+                          class="fa-solid fa-check hidden group-hover:block"
+                        ></i>
+                      </div>
+                      <p class="text-gray-700 capitalize">purple</p>
+                    </div>
+                    <div
+                      class="border group-hover:bg-[#83b735] group-hover:text-white group-hover:border-none border-gray-700 rounded-2xl px-3"
+                    >
+                      <p>24</p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex group justify-between items-center gap-4 cursor-pointer"
+                  >
+                    <div class="flex items-center gap-2">
+                      <div
+                        class="bg-red-700 flex text-white justify-center items-center w-[30px] h-[30px] rounded-full"
+                      >
+                        <i
+                          class="fa-solid fa-check hidden group-hover:block"
+                        ></i>
+                      </div>
+                      <p class="text-gray-700 capitalize">red</p>
+                    </div>
+                    <div
+                      class="border group-hover:bg-[#83b735] group-hover:text-white group-hover:border-none border-gray-700 rounded-2xl px-3"
+                    >
+                      <p>33</p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex group justify-between items-center gap-4 cursor-pointer"
+                  >
+                    <div class="flex items-center gap-2">
+                      <div
+                        class="bg-orange-800 flex text-white justify-center items-center w-[30px] h-[30px] rounded-full"
+                      >
+                        <i
+                          class="fa-solid fa-check hidden group-hover:block"
+                        ></i>
+                      </div>
+                      <p class="text-gray-700 capitalize">orange</p>
+                    </div>
+                    <div
+                      class="border group-hover:bg-[#83b735] group-hover:text-white group-hover:border-none border-gray-700 rounded-2xl px-3"
+                    >
+                      <p>40</p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex group justify-between items-center gap-4 cursor-pointer"
+                  >
+                    <div class="flex items-center gap-2">
+                      <div
+                        class="bg-blue-700 flex text-white justify-center items-center w-[30px] h-[30px] rounded-full"
+                      >
+                        <i
+                          class="fa-solid fa-check hidden group-hover:block"
+                        ></i>
+                      </div>
+                      <p class="text-gray-700 capitalize">Beige</p>
+                    </div>
+                    <div
+                      class="border group-hover:bg-[#83b735] group-hover:text-white group-hover:border-none border-gray-700 rounded-2xl px-3"
+                    >
+                      <p>25</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- FILTER BY SIZE   -->
+              <span class="border-b block border-gray-300 mt-3"></span>
+
+              <div class="py-4">
+                <h1 class="text-[19px] text-gray-900 font-medium">
+                  FILTER BY SIZE
+                </h1>
+                <div class="py-4 pr-4 space-y-4">
+                  <div
+                    class="flex group justify-between items-center gap-4 cursor-pointer"
+                  >
+                    <div class="flex items-center gap-2">
+                      <p
+                        class="text-[19px] border-b-[2px] border-black uppercase"
+                      >
+                        XS
+                      </p>
+                    </div>
+                    <div
+                      class="border group-hover:bg-[#83b735] group-hover:text-white group-hover:border-none border-gray-700 rounded-2xl px-3"
+                    >
+                      <p>25</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-[75%]">
+          <div>
+            <!-- filter   top  -->
+            <div class="flex justify-between items-center gap-2">
+              <div>
+                <p class="flex items-center text-[14px] text-gray-700 gap-1">
+                  <a href="">Home</a> <span> / </span>
+                  <a class="text-black" href="">shop</a>
+                </p>
+              </div>
+              <div class="flex items-center gap-6">
+                <p class="flex items-center text-[14px] text-gray-700 gap-1">
+                  <a href="">Show:</a>
+                  <a class="text-black" href="">9</a> <span> / </span>
+                  <a class="text-black" href="">12</a> <span> / </span>
+                  <a class="text-black" href="">18</a> <span> / </span>
+                  <a class="text-black" href="">24</a>
+                </p>
+                <div class="flex gap-4 items-center text-gray-700">
+                  <button class="text-[22px]">
+                    <i class="fa-solid fa-bars"></i>
+                  </button>
+                  <button class="text-[22px]">
+                    <i class="fa-solid fa-braille"></i>
+                  </button>
+                  <button class="text-[22px]">
+                    <i class="fa-solid fa-list-ul"></i>
+                  </button>
+                  <button class="text-[22px]">
+                    <i class="fa-solid fa-bars"></i>
+                  </button>
+                </div>
+                <select
+                  class="block w-full py-2 px-3 border-b border-[#83b735] bg-white rounded-md focus:outline-none focus:border-[#83b735] sm:text-sm"
+                >
+                  <option>Default sorting</option>
+                  <option>Sort by popularity</option>
+                  <option>Sort by average rating</option>
+                  <option>Sort by latest</option>
+                  <option>Sort by price: low to high</option>
+                  <option>Sort by price: high to low</option>
+                </select>
+              </div>
+            </div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- script links  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+      integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./slick/slick.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

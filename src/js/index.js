@@ -15,6 +15,10 @@ $(document).ready(function () {
     );
     $("#categoryContent").hide();
   });
+
+  $("#shopBannerCategory").click(function () {
+    $("#shopBannerContent").slideToggle("slow");
+  });
 });
 
 // slider

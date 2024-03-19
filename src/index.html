@@ -23,106 +23,133 @@
   </head>
 
   <body>
+    <!-- top header  -->
+    <div class="bg-primary">
+      <div class="container py-3">
+        <div class="flex justify-center xl:justify-between items-center gap-2">
+          <div class="hidden xl:flex items-center gap-3 text-white">
+            <a href="" class="">ENGLISH</a>
+            <a href="" class="">COUNTRY</a>
+            <a href="" class="">FREE SHIPPING FOR ALL ORDERS OF $150</a>
+          </div>
+          <div class="flex items-center gap-6 text-white">
+            <div class="flex items-center gap-4 text-white">
+              <a href=""> <i class="fa-brands fa-facebook-f"></i> </a>
+              <a href=""> <i class="fa-brands fa-x-twitter"></i> </a>
+              <a href=""> <i class="fa-brands fa-instagram"></i> </a>
+              <a href=""> <i class="fa-brands fa-youtube"></i> </a>
+            </div>
+            <div class="hidden xl:block">
+              <a href="" class="">NEWSLETTER</a>
+              <a href="" class="">CONTACT US</a>
+              <a href="" class="">FAQS</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- header section  -->
-    <header class="container">
-      <nav
-        class="flex justify-between items-center gap-4 lg:gap-6 xl:gap-12 py-4"
-      >
-        <!-- responsive menu  -->
-        <div id="openModalBtn" class="flex xl:hidden items-center gap-2">
-          <i class="fa-solid fa-bars"></i>
-          <span>menu</span>
-        </div>
-        <div>
-          <a
-            href="/"
-            class="text-[20px] lg:text-[30px] xl:text-[45px] font-bold"
-          >
-            woodmart
-          </a>
-        </div>
-        <!-- lx device show  manu  -->
-        <div
-          class="hidden xl:block border w-full border-[#20202071] rounded-[4px]"
+    <header class="sticky top-0 w-full bg-white py-3 z-[500]">
+      <div class="container">
+        <nav
+          class="flex justify-between items-center gap-4 lg:gap-6 xl:gap-12 py-4"
         >
-          <div class="flex items-center gap-2 lg:gap-4">
-            <div class="p-[10px] w-full">
-              <input
-                class="outline-none w-full placeholder:text-[17px]"
-                type="search"
-                placeholder="Search for products"
-              />
-            </div>
-            <div
-              class="border-l-[1px] min-w-[250px] border-[#20202056] p-[10px]"
-            >
-              <select
-                class="block text-gray-700 w-full px-4 pr-8 leading-tight bg-white rounded-md focus:outline-none focus:bg-white focus:border-gray-500"
-              >
-                <option value="1">Select Option</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
-                <option value="4">Option 4</option>
-                <option value="5">Option 5</option>
-              </select>
-            </div>
-            <div
-              class="border-l-[1px] px-4 cursor-pointer text-gray-700 border-[#20202056] p-[10px]"
-            >
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
+          <!-- responsive menu  -->
+          <div id="openModalBtn" class="flex xl:hidden items-center gap-2">
+            <i class="fa-solid fa-bars"></i>
+            <span class="hidden sm:block">menu</span>
           </div>
-        </div>
-        <div class="hidden xl:flex items-center gap-2 lg:gap-6">
-          <!-- login and register link  -->
-          <div class="w-[150px]">
+          <div>
             <a
-              href=""
-              class="text-[12px] text-gray-700 uppercase hover:opacity-80 duration-200 lg:text-[18px] font-medium"
-              >Login/ register</a
+              href="/"
+              class="text-[20px] lg:text-[30px] xl:text-[45px] font-bold"
             >
+              woodmart
+            </a>
           </div>
-
+          <!-- lx device show  manu  -->
           <div
-            class="flex hover:opacity-80 duration-200 cursor-pointer items-center gap-5 lg:gap-10"
+            class="hidden xl:block border w-full border-[#20202071] rounded-[4px]"
           >
-            <!-- wishlist cart  -->
-            <div class="text-[17px] lg:text-[22px]">
-              <i class="fa-regular fa-heart"></i>
+            <div class="flex items-center gap-2 lg:gap-4">
+              <div class="p-[10px] w-full">
+                <input
+                  class="outline-none w-full placeholder:text-[17px]"
+                  type="search"
+                  placeholder="Search for products"
+                />
+              </div>
+              <div
+                class="border-l-[1px] min-w-[250px] border-[#20202056] p-[10px]"
+              >
+                <select
+                  class="block text-gray-700 w-full px-4 pr-8 leading-tight bg-white rounded-md focus:outline-none focus:bg-white focus:border-gray-500"
+                >
+                  <option value="1">Select Option</option>
+                  <option value="2">Option 2</option>
+                  <option value="3">Option 3</option>
+                  <option value="4">Option 4</option>
+                  <option value="5">Option 5</option>
+                </select>
+              </div>
+              <div
+                class="border-l-[1px] px-4 cursor-pointer text-gray-700 border-[#20202056] p-[10px]"
+              >
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
             </div>
-            <div
-              class="text-[17px] hover:opacity-80 duration-200 cursor-pointer relative lg:text-[22px]"
-            >
-              <i class="fa-solid fa-screwdriver-wrench relative"></i>
-              <span
-                class="text-[12px] absolute -top-2 bg-[#83B735] px-1 rounded-full text-white"
-                >0</span
+          </div>
+          <div class="hidden xl:flex items-center gap-2 lg:gap-6">
+            <!-- login and register link  -->
+            <div class="w-[150px]">
+              <a
+                href=""
+                class="text-[12px] text-gray-700 uppercase hover:opacity-80 duration-200 lg:text-[18px] font-medium"
+                >Login/ register</a
               >
             </div>
+
             <div
-              class="flex hover:opacity-80 cursor-pointer duration-200 items-center gap-4"
+              class="flex hover:opacity-80 duration-200 cursor-pointer items-center gap-5 lg:gap-10"
             >
-              <div class="relative text-[17px] lg:text-[22px]">
-                <i class="fa-solid fa-bag-shopping"></i>
+              <!-- wishlist cart  -->
+              <div class="text-[17px] lg:text-[22px]">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <div
+                class="text-[17px] hover:opacity-80 duration-200 cursor-pointer relative lg:text-[22px]"
+              >
+                <i class="fa-solid fa-screwdriver-wrench relative"></i>
                 <span
                   class="text-[12px] absolute -top-2 bg-[#83B735] px-1 rounded-full text-white"
                   >0</span
                 >
               </div>
-              <span>$0.00</span>
+              <div
+                class="flex hover:opacity-80 cursor-pointer duration-200 items-center gap-4"
+              >
+                <div class="relative text-[17px] lg:text-[22px]">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                  <span
+                    class="text-[12px] absolute -top-2 bg-[#83B735] px-1 rounded-full text-white"
+                    >0</span
+                  >
+                </div>
+                <span>$0.00</span>
+              </div>
             </div>
           </div>
-        </div>
-        <div>
-          <div class="relative text-[17px] lg:text-[22px]">
-            <i class="fa-solid fa-bag-shopping"></i>
-            <span
-              class="text-[12px] absolute -top-2 bg-[#83B735] px-1 rounded-full text-white"
-              >0</span
-            >
+          <div class="xl:hidden">
+            <div class="relative text-[17px] lg:text-[22px]">
+              <i class="fa-solid fa-bag-shopping"></i>
+              <span
+                class="text-[12px] absolute -top-2 bg-[#83B735] px-1 rounded-full text-white"
+                >0</span
+              >
+            </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
     <!-- top category   -->
     <div class="hidden xl:block border-y-[2px] shadow-md border-[#0000001d]">
@@ -151,7 +178,7 @@
                 <a href="" class="font-semibold">Shop</a>
                 <!-- shop modal  -->
                 <div
-                  class="hidden capitalize text-gray-700 group-hover:block absolute top-10 z-[100] bg-white"
+                  class="hidden capitalize border mt-[26px] border-gray-300 text-gray-700 group-hover:block absolute top-10 z-[100] bg-white"
                 >
                   <div class="grid grid-cols-3 gap-8">
                     <div class="p-6">
@@ -317,7 +344,7 @@
                 <!-- Blog  modal  -->
                 <a href="" class="font-semibold"> Blog</a>
                 <div
-                  class="hidden capitalize text-gray-700 group-hover:block absolute top-10 z-[100] bg-white"
+                  class="hidden capitalize border mt-[26px] border-gray-300 text-gray-700 group-hover:block absolute top-10 z-[100] bg-white"
                 >
                   <div class="grid grid-cols-3 gap-8">
                     <div class="p-6">
@@ -502,7 +529,7 @@
                 <!-- Pages modal  -->
                 <a href="" class="font-semibold"> Pages</a>
                 <div
-                  class="hidden capitalize text-gray-700 lg:w-[70%] group-hover:block absolute top-10 z-[100] bg-white"
+                  class="hidden capitalize border mt-[26px] border-gray-300 text-gray-700 lg:w-[70%] group-hover:block absolute top-10 z-[100] bg-white"
                 >
                   <div class="grid grid-cols-4 w-full gap-8 p-6">
                     <div class="">
@@ -734,7 +761,7 @@
                 <!-- Element  page  -->
                 <a href="" class="font-semibold"> Element</a>
                 <div
-                  class="hidden capitalize text-gray-700 lg:w-[70%] group-hover:block absolute top-10 z-[100] bg-white"
+                  class="hidden capitalize border mt-[26px] border-gray-300 text-gray-700 lg:w-[70%] group-hover:block absolute top-10 z-[100] bg-white"
                 >
                   <div class="grid grid-cols-4 w-full gap-8 p-6">
                     <div class="">
@@ -1064,7 +1091,53 @@
           </div>
         </div>
         <div id="categoryContent" class="content mt-4 hidden">
-          <p>Category content goes here...</p>
+          <div>
+            <ul class=" ">
+              <li
+                class="border-b px-4 py-3 text-hover text-[17px] duration-300 border-gray-300"
+              >
+                <a href="">FURNITURE</a>
+              </li>
+              <li
+                class="border-b px-4 py-3 text-hover text-[17px] duration-300 border-gray-300"
+              >
+                <a href="">LIGHTING</a>
+              </li>
+              <li
+                class="border-b px-4 py-3 text-hover text-[17px] duration-300 border-gray-300"
+              >
+                <a href="">ACCESSORIES</a>
+              </li>
+              <li
+                class="border-b px-4 py-3 text-hover text-[17px] duration-300 border-gray-300"
+              >
+                <a href="">CLOCKS</a>
+              </li>
+              <li
+                class="border-b px-4 py-3 text-hover text-[17px] duration-300 border-gray-300"
+              >
+                <a href="">COOKING</a>
+              </li>
+              <li
+                class="border-b px-4 py-3 space-x-2 text-hover text-[17px] duration-300 border-gray-300"
+              >
+                <i class="fa-regular fa-heart"></i>
+                <a href="">ELECTRONICS</a>
+              </li>
+              <li
+                class="border-b px-4 py-3 space-x-2 text-hover text-[17px] duration-300 border-gray-300"
+              >
+                <i class="fa-solid fa-compress"></i>
+                <a href="">MINIMALISM</a>
+              </li>
+              <li
+                class="border-b px-4 py-3 space-x-2 text-hover text-[17px] duration-300 border-gray-300"
+              >
+                <i class="fa-regular fa-user"></i>
+                <a href="">FASHION</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <!-- close modal   -->
@@ -4438,8 +4511,8 @@
             </button>
           </div>
           <!-- demo prodcut  -->
-          <div class="w-[70%]">
-            <div class="demoSlider px-4">
+          <div class="w-[70%] relative">
+            <div class="demoSlider px-10">
               <div>
                 <img
                   src="https://woodmart.b-cdn.net/wp-content/uploads/2018/10/books-demos-opt-2.jpg.webp"
@@ -4671,9 +4744,6 @@
     </div>
 
     <!-- script links  -->
-
-    <script></script>
-
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
       integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
