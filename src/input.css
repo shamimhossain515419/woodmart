@@ -31,6 +31,9 @@ body {
 .bg-hover:hover {
   background-color: var(--secondary-color);
 }
+.bg-hover-primary:hover {
+  background-color: var(--main-color);
+}
 
 .border-color {
   border-color: var(--main-color);
