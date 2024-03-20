@@ -204,9 +204,31 @@ modal.addEventListener("click", (e) => {
   }
 });
 
-// modal tab code
+// product slider image
+const imageArray = [
+  "https://woodmart.b-cdn.net/wp-content/uploads/2016/08/product-furniture-11-2-131x150.jpg.webp",
+  "https://woodmart.b-cdn.net/wp-content/uploads/2016/08/product-furniture-11-3-430x490.jpg.webp",
+  "https://woodmart.b-cdn.net/wp-content/uploads/2016/08/product-furniture-11-430x490.jpg.webp",
+];
 
-const menuTab = document.getElementById("menuTab");
-const categoryTab = document.getElementById("categoryTab");
-const menuContent = document.getElementById("menuContent");
-const categoryContent = document.getElementById("categoryContent");
+const slider = document.querySelector(".slider");
+const prevBtn = document.getElementById("prev");
+const nextBtn = document.getElementById("next");
+
+let currentIndex = 0;
+
+function showSlide(index) {
+  console.log(index);
+
+  slider.style.transform = `translateX(-${index * 100}%)`;
+}
+
+prevBtn.addEventListener("click", () => {
+  currentIndex = (currentIndex - 1 + imageArray.length) % imageArray.length;
+  showSlide(currentIndex);
+});
+
+nextBtn.addEventListener("click", () => {
+  currentIndex = (currentIndex + 1) % imageArray.length;
+  showSlide(currentIndex);
+});

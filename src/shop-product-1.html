@@ -1148,12 +1148,25 @@
     <div class="container py-6">
       <div class="grid lg:grid-cols-2 gap-4">
         <div>
-          <div class="h-[500px] w-full">
-            <img
-              class="w-full h-full object-cover"
-              src="https://woodmart.b-cdn.net/wp-content/uploads/2016/09/product-light-4-4.jpg"
-              alt=""
-            />
+          <div class="slider-container">
+            <div class="slider">
+              <img
+                src="https://woodmart.b-cdn.net/wp-content/uploads/2016/08/product-furniture-11-2.jpg"
+                alt="Slide 1"
+              />
+              <img
+                src="https://woodmart.b-cdn.net/wp-content/uploads/2016/08/product-furniture-11-3-430x490.jpg.webp"
+                alt="Slide 2"
+              />
+              <img
+                src="https://woodmart.b-cdn.net/wp-content/uploads/2016/08/product-furniture-11-2.jpg"
+                alt="Slide 3"
+              />
+            </div>
+            <div class="slider-controls">
+              <div class="slider-control" id="prev">&#10094;</div>
+              <div class="slider-control" id="next">&#10095;</div>
+            </div>
           </div>
         </div>
         <div>
@@ -1257,6 +1270,53 @@
             </div>
             <div class="bg-primary p-3 uppercase text-[14px] text-white">
               add to cart
+            </div>
+          </div>
+          <!-- action button  -->
+          <div class="pt-6 flex items-center gap-6">
+            <div
+              class="flex hover:opacity-70 duration-300 cursor-pointer items-center gap-2"
+            >
+              <i class="fa-solid fa-code-compare"></i>
+              <h1 class="text-[15px] text-gray-700 font-normal">Compate</h1>
+            </div>
+            <div
+              class="flex hover:opacity-70 duration-300 cursor-pointer items-center gap-2"
+            >
+              <i class="fa-regular fa-heart"></i>
+              <h1 class="text-[15px] text-gray-700 font-normal">
+                Add to wishlist
+              </h1>
+            </div>
+            <div
+              class="flex hover:opacity-70 duration-300 cursor-pointer items-center gap-2"
+            >
+              <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+              <h1 class="text-[15px] text-gray-700 font-normal">Sizes Guide</h1>
+            </div>
+          </div>
+          <div class="py-4 border-b border-gray-300"></div>
+          <div class="pt-4 space-y-2">
+            <!-- category  -->
+            <div class="flex items-center gap-2">
+              <h1 class="text-[16px] font-medium">SKU:</h1>
+              <a href="#" class="text-[14px] text-gray-700">MNK-4020</a>
+            </div>
+            <div class="flex items-center gap-2">
+              <h1 class="text-[16px] font-medium">Category:</h1>
+              <a href="#" class="text-[14px] text-gray-700">Accessories</a>
+            </div>
+            <div class="flex items-center gap-2">
+              <h1 class="text-[16px] font-medium">Share:</h1>
+              <a
+                href="#"
+                class="text-[14px] flex items-center gap-3 text-gray-700"
+              >
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-telegram"></i>
+              </a>
             </div>
           </div>
         </div>

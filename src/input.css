@@ -59,3 +59,31 @@ body {
 .filterColorScroll::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+/* product slider  */
+
+.slider-container {
+  position: relative;
+  max-width: 500px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.slider {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+.slider img {
+  width: 100%;
+  height: auto;
+}
+.slider-controls {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.slider-control {
+  cursor: pointer;
+}
