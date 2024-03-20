@@ -1146,32 +1146,72 @@
     <!-- product details  -->
 
     <div class="container py-6">
-      <div class="grid lg:grid-cols-2 gap-4">
-        <div>
-          <div class="slider-container">
-            <div class="slider">
+      <div class="grid lg:grid-cols-2 gap-8">
+        <div class="py-2 w-full overflow-hidden">
+          <swiper-container
+            style="
+              --swiper-navigation-color: #000;
+              --swiper-pagination-color: #000;
+            "
+            class="mySwiper w-full h-[450px]"
+            thumbs-swiper=".mySwiper2"
+            space-between="10"
+            navigation="true"
+          >
+            <swiper-slide>
               <img
-                src="https://woodmart.b-cdn.net/wp-content/uploads/2016/08/product-furniture-11-2.jpg"
-                alt="Slide 1"
+                src="https://woodmart.b-cdn.net/wp-content/uploads/2016/09/product-furniture-19-2.jpg"
               />
+            </swiper-slide>
+            <swiper-slide>
               <img
-                src="https://woodmart.b-cdn.net/wp-content/uploads/2016/08/product-furniture-11-3-430x490.jpg.webp"
-                alt="Slide 2"
+                src="https://woodmart.b-cdn.net/wp-content/uploads/2016/09/product-furniture-19-4.jpg"
               />
+            </swiper-slide>
+            <swiper-slide>
               <img
-                src="https://woodmart.b-cdn.net/wp-content/uploads/2016/08/product-furniture-11-2.jpg"
-                alt="Slide 3"
+                src="https://woodmart.b-cdn.net/wp-content/uploads/2016/09/product-furniture-19.jpg"
               />
-            </div>
-            <div class="slider-controls">
-              <div class="slider-control" id="prev">&#10094;</div>
-              <div class="slider-control" id="next">&#10095;</div>
-            </div>
-          </div>
+            </swiper-slide>
+            <swiper-slide>
+              <img
+                src="https://woodmart.b-cdn.net/wp-content/uploads/2016/09/product-furniture-19-3.jpg"
+              />
+            </swiper-slide>
+          </swiper-container>
+
+          <swiper-container
+            class="mySwiper2 h-[150px] w-full"
+            space-between="10"
+            slides-per-view="4"
+            free-mode="true"
+            watch-slides-progress="true"
+          >
+            <swiper-slide>
+              <img
+                src="https://woodmart.b-cdn.net/wp-content/uploads/2016/09/product-furniture-19-2.jpg"
+              />
+            </swiper-slide>
+            <swiper-slide>
+              <img
+                src="https://woodmart.b-cdn.net/wp-content/uploads/2016/09/product-furniture-19-4.jpg"
+              />
+            </swiper-slide>
+            <swiper-slide>
+              <img
+                src="https://woodmart.b-cdn.net/wp-content/uploads/2016/09/product-furniture-19.jpg"
+              />
+            </swiper-slide>
+            <swiper-slide>
+              <img
+                src="https://woodmart.b-cdn.net/wp-content/uploads/2016/09/product-furniture-19-3.jpg"
+              />
+            </swiper-slide>
+          </swiper-container>
         </div>
         <div>
           <div class="flex justify-between items-center gap-2">
-            <h1 class="text-gray-700">
+            <h1 class="text-gray-700 text-[11px] lg:text-[16px]">
               <span>Home</span> <span> /</span> <span>Shop</span>
               <span> /</span> <span>Lighting</span> <span> /</span>
               <span>Hanging</span> <span> /</span>
@@ -1182,9 +1222,11 @@
               <i class="fa-solid fa-chevron-right"></i>
             </div>
           </div>
-          <div class="flex justify-between items-center gap-3 pt-5">
+          <div class="md:flex justify-between items-center gap-3 pt-5">
             <div class="py-2">
-              <h1 class="text-[45px] text-gray-700 font-semibold">
+              <h1
+                class="text-[35px] lg:text-[45px] text-gray-700 font-semibold"
+              >
                 Hanging lamp lukasi
               </h1>
               <p class="text-[27px] font-normal text-primary">
@@ -1273,7 +1315,7 @@
             </div>
           </div>
           <!-- action button  -->
-          <div class="pt-6 flex items-center gap-6">
+          <div class="pt-6 flex flex-wrap items-center gap-6">
             <div
               class="flex hover:opacity-70 duration-300 cursor-pointer items-center gap-2"
             >
@@ -1296,7 +1338,7 @@
             </div>
           </div>
           <div class="py-4 border-b border-gray-300"></div>
-          <div class="pt-4 space-y-2">
+          <div class="pt-6 space-y-2">
             <!-- category  -->
             <div class="flex items-center gap-2">
               <h1 class="text-[16px] font-medium">SKU:</h1>
@@ -1322,6 +1364,1024 @@
         </div>
       </div>
     </div>
+
+    <!-- product   details  -->
+
+    <div>
+      <div class="border-y border-gray-300 py-7">
+        <div class="container">
+          <div class="py-4 flex flex-wrap justify-center items-center gap-5">
+            <button class="text-[19px] font-medium text-black">
+              DESCRIPTION
+            </button>
+            <button class="text-[19px] font-medium text-gray-800">
+              ADDITIONAL INFORMATION
+            </button>
+            <button class="text-[19px] font-medium text-gray-800">
+              REVIEWS (0)
+            </button>
+            <button class="text-[19px] font-medium text-gray-800">
+              ABOUT BRAND
+            </button>
+            <button class="text-[19px] font-medium text-gray-800">
+              SHIPPING & DELIVERY
+            </button>
+          </div>
+          <div class="py-6 lg:grid grid-cols-2 gap-10">
+            <div>
+              <h1 class="text-[22px] font-medium text-gray-800">
+                IMPERDIET HIMENAEOS MATTIS
+              </h1>
+              <p class="py-2 leading-6 text-[14px] text-[#000000d9]">
+                Cubilia vestibulum interdum nisl a parturient a auctor
+                vestibulum taciti vel bibendum tempor adipiscing suspendisse
+                posuere libero penatibus lorem at interdum tristique iaculis
+                redosan condimentum a ac rutrum mollis consectetur. Aenean
+                nascetur vehicula egestas a adipiscing a est egestas suspendisse
+                parturient diam adipiscing mattis elementum velit pulvinar
+                suscipit sagittis facilisis facilisi tortor morbi at aliquam.
+              </p>
+              <div class="flex items-center gap-8 py-3">
+                <div class="min-h-[50px] w-[2px] bg-primary"></div>
+                <div>
+                  <p class="py-2 leading-6 text-[17px] text-[#000000d9]">
+                    Netus nisi volutpat donec condimentum nunc eu sem odio
+                    condimentum hendrerit nisl mollis scelerisque ad vitae a eu.
+                  </p>
+                </div>
+              </div>
+              <p class="py-2 leading-6 text-[14px] text-[#000000d9]">
+                Etiam dictumst congue a non class risus sed a. Diam adipiscing a
+                condimentum in a nisl a maecenas libero pharetra tincidunt
+                phasellus justo molestie bibendum. Vestibulum penatibus
+                vestibulum lobortis vehicula euismod a platea taciti a eget in
+                nec cum eget curabitur justo id enim mi velit at cum. Eu amet ut
+                elit a sociis himenaeos eros nunc at pharetra magna suscipit.
+              </p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-10">
+              <div class="space-y-2">
+                <div
+                  class="info-svg-wrapper info-icon mx-auto"
+                  style="width: 50px; height: 50px"
+                >
+                  <svg
+                    version="1.1"
+                    id="svg-6322"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 433.784 433.784"
+                    style="enable-background: new 0 0 433.784 433.784"
+                    xml:space="preserve"
+                  >
+                    <g>
+                      <path
+                        d="M247.667,0v341H48.975v92.784h198.692h7H384.81V0H247.667z M247.667,426.784H55.975V348h191.692V426.784z M377.81,426.784
+                    H254.667V7H377.81V426.784z"
+                      ></path>
+                      <rect
+                        x="265.315"
+                        y="191.602"
+                        width="7"
+                        height="50.581"
+                      ></rect>
+                      <rect x="126.53" y="358" width="50.581" height="7"></rect>
+                      <path
+                        d="M68.825,93.098h7V74.661h40.498v18.437h7V74.661h40.497v15.023l-0.242,0.596c-0.808,1.987-19.757,49.363-18.256,109.399
+                    c1.479,59.147,0.018,90.927,0.003,91.241l-0.174,3.666h50.668v-92.575c0-10.851-0.707-21.733-2.101-32.345
+                    c-3.515-26.769-10.319-61.691-22.898-78.632V74.661h40.498v18.437h7V74.661h20.173V48.445H48.975v26.216h19.851V93.098z
+                     M188.819,202.012v85.575h-36.363c0.334-9.971,1.064-40.077-0.136-88.083c-1.155-46.191,10.451-85.583,15.484-100.358
+                    c10.628,17.982,16.381,51.688,18.975,71.434C188.133,180.889,188.819,191.465,188.819,202.012z M55.975,55.445h175.517v12.216
+                    H55.975V55.445z"
+                      ></path>
+                    </g>
+                  </svg>
+                </div>
+                <h1 class="text-[19px] font-medium text-center">
+                  SAGITTIS MALESUAD
+                </h1>
+                <p class="leading-6 text-center text-[14px] text-[#000000d9]">
+                  Ridiculus facilisi condimentum ridiculus tristique nostra
+                  litora parturient risus
+                </p>
+              </div>
+              <div class="space-y-2">
+                <div
+                  class="info-svg-wrapper mx-auto info-icon"
+                  style="width: 50px; height: 50px"
+                >
+                  <svg
+                    version="1.1"
+                    id="svg-1942"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 371.481 371.481"
+                    style="enable-background: new 0 0 371.481 371.481"
+                    xml:space="preserve"
+                  >
+                    <g>
+                      <path
+                        d="M371.481,148.038H366.4V89.947h-38.5v58.091h-88.25v-16.091h80.926V19.953H126.724v111.994h80.927v16.091H119.4V89.947
+                    H80.9v58.091H0v30.999h13.499v172.491h96.996v-31.081h225.488v31.081h21.999V179.037h13.499V148.038z M334.9,96.947h24.5v51.091
+                    h-24.5V96.947z M133.724,26.953h179.853v97.994H133.724V26.953z M214.65,131.947h18v16.091h-18V131.947z M87.9,96.947h24.5v51.091
+                    H87.9V96.947z M20.499,222.16h82.996v36.122H20.499V222.16z M20.499,265.282h82.996v36.123H20.499V265.282z M110.495,179.037
+                    h225.488v13.91H110.495V179.037z M103.495,215.16H20.499v-36.123h82.996V215.16z M20.499,344.528v-36.123h82.996v36.123H20.499z
+                     M110.495,313.447v-113.5h225.488v113.5H110.495z M350.982,344.528h-7.999V179.037h7.999V344.528z M364.481,172.037H7v-16.999
+                    h357.481V172.037z"
+                      ></path>
+                      <rect
+                        x="54.594"
+                        y="183.447"
+                        width="14.807"
+                        height="7"
+                      ></rect>
+                      <rect
+                        x="54.594"
+                        y="226.57"
+                        width="14.807"
+                        height="7"
+                      ></rect>
+                      <rect
+                        x="54.594"
+                        y="269.693"
+                        width="14.807"
+                        height="7"
+                      ></rect>
+                      <rect
+                        x="54.594"
+                        y="312.816"
+                        width="14.807"
+                        height="7"
+                      ></rect>
+                    </g>
+                  </svg>
+                </div>
+                <h1 class="text-[19px] font-medium text-center">
+                  LITORA PARTURIENT
+                </h1>
+                <p class="leading-6 text-center text-[14px] text-[#000000d9]">
+                  Ridiculus facilisi condimentum ridiculus tristique nostra
+                  litora parturient risus
+                </p>
+              </div>
+              <div class="space-y-2">
+                <div
+                  class="info-svg-wrapper info-icon mx-auto"
+                  style="width: 50px; height: 50px"
+                >
+                  <svg
+                    version="1.1"
+                    id="svg-6322"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 433.784 433.784"
+                    style="enable-background: new 0 0 433.784 433.784"
+                    xml:space="preserve"
+                  >
+                    <g>
+                      <path
+                        d="M247.667,0v341H48.975v92.784h198.692h7H384.81V0H247.667z M247.667,426.784H55.975V348h191.692V426.784z M377.81,426.784
+                    H254.667V7H377.81V426.784z"
+                      ></path>
+                      <rect
+                        x="265.315"
+                        y="191.602"
+                        width="7"
+                        height="50.581"
+                      ></rect>
+                      <rect x="126.53" y="358" width="50.581" height="7"></rect>
+                      <path
+                        d="M68.825,93.098h7V74.661h40.498v18.437h7V74.661h40.497v15.023l-0.242,0.596c-0.808,1.987-19.757,49.363-18.256,109.399
+                    c1.479,59.147,0.018,90.927,0.003,91.241l-0.174,3.666h50.668v-92.575c0-10.851-0.707-21.733-2.101-32.345
+                    c-3.515-26.769-10.319-61.691-22.898-78.632V74.661h40.498v18.437h7V74.661h20.173V48.445H48.975v26.216h19.851V93.098z
+                     M188.819,202.012v85.575h-36.363c0.334-9.971,1.064-40.077-0.136-88.083c-1.155-46.191,10.451-85.583,15.484-100.358
+                    c10.628,17.982,16.381,51.688,18.975,71.434C188.133,180.889,188.819,191.465,188.819,202.012z M55.975,55.445h175.517v12.216
+                    H55.975V55.445z"
+                      ></path>
+                    </g>
+                  </svg>
+                </div>
+                <h1 class="text-[19px] font-medium text-center">
+                  TRISTIQUE IACULIS
+                </h1>
+                <p class="leading-6 text-center text-[14px] text-[#000000d9]">
+                  Ridiculus facilisi condimentum ridiculus tristique nostra
+                  litora parturient risus
+                </p>
+              </div>
+              <div class="space-y-2">
+                <div
+                  class="info-svg-wrapper info-icon mx-auto"
+                  style="width: 50px; height: 50px"
+                >
+                  <svg
+                    version="1.1"
+                    id="svg-6322"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 433.784 433.784"
+                    style="enable-background: new 0 0 433.784 433.784"
+                    xml:space="preserve"
+                  >
+                    <g>
+                      <path
+                        d="M247.667,0v341H48.975v92.784h198.692h7H384.81V0H247.667z M247.667,426.784H55.975V348h191.692V426.784z M377.81,426.784
+                    H254.667V7H377.81V426.784z"
+                      ></path>
+                      <rect
+                        x="265.315"
+                        y="191.602"
+                        width="7"
+                        height="50.581"
+                      ></rect>
+                      <rect x="126.53" y="358" width="50.581" height="7"></rect>
+                      <path
+                        d="M68.825,93.098h7V74.661h40.498v18.437h7V74.661h40.497v15.023l-0.242,0.596c-0.808,1.987-19.757,49.363-18.256,109.399
+                    c1.479,59.147,0.018,90.927,0.003,91.241l-0.174,3.666h50.668v-92.575c0-10.851-0.707-21.733-2.101-32.345
+                    c-3.515-26.769-10.319-61.691-22.898-78.632V74.661h40.498v18.437h7V74.661h20.173V48.445H48.975v26.216h19.851V93.098z
+                     M188.819,202.012v85.575h-36.363c0.334-9.971,1.064-40.077-0.136-88.083c-1.155-46.191,10.451-85.583,15.484-100.358
+                    c10.628,17.982,16.381,51.688,18.975,71.434C188.133,180.889,188.819,191.465,188.819,202.012z M55.975,55.445h175.517v12.216
+                    H55.975V55.445z"
+                      ></path>
+                    </g>
+                  </svg>
+                </div>
+                <h1 class="text-[19px] font-medium text-center">
+                  NISI VOLUTPAT
+                </h1>
+                <p class="leading-6 text-center text-[14px] text-[#000000d9]">
+                  Ridiculus facilisi condimentum ridiculus tristique nostra
+                  litora parturient risus
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- You may also like…  -->
+
+    <div class="container">
+      <h1 class="text-[25px] font-semibold py-3">You may also like…</h1>
+
+      <div class="grid grid-cols-4 gap-6 py-7">
+        <!-- product cart  -->
+        <div>
+          <div
+            class="cart-image group cursor-pointer w-full h-[350px] relative"
+          >
+            <img
+              class="h-full w-full"
+              src="https://woodmart.b-cdn.net/wp-content/uploads/2016/09/product-furniture-1.jpg"
+              alt=""
+            />
+            <div
+              class="bg-white opacity-0 group-hover:opacity-100 duration-500 transition-all translate-x-0 w-[70px] flex justify-center items-center absolute top-4 right-4 py-4"
+            >
+              <div class="space-y-2">
+                <div class="text-[20px] cursor-pointer">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="text-[20px] cursor-pointer">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <div class="text-[20px] cursor-pointer">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-white opacity-0 group-hover:translate-y-0 translate-y-5 group-hover:opacity-100 duration-500 p-3 border-b border-gray-400 flex justify-between items-center gap-4 absolute bottom-0 w-full"
+            >
+              <div class="flex items-center gap-2">
+                <div class="relative">
+                  <div
+                    class="group/item cursor-pointer relative inline-block border-b border-gray-400 w-[20px] h-[20px] rounded-full bg-black text-center"
+                  >
+                    <div
+                      class="opacity-0 bg-black font-medium text-white text-center text-xs rounded-lg py-2 absolute z-10 group-hover/item:opacity-100 bottom-full -left-1/2 px-3 pointer-events-none"
+                    >
+                      Black
+                    </div>
+                  </div>
+                </div>
+                <div class="relative">
+                  <div
+                    class="group/item cursor-pointer relative inline-block border-b border-gray-400 w-[20px] h-[20px] rounded-full bg-gray-700 text-center"
+                  >
+                    <div
+                      class="opacity-0 bg-black font-medium text-white text-center text-xs rounded-lg py-2 absolute z-10 group-hover/item:opacity-100 bottom-full -left-1/2 px-3 pointer-events-none"
+                    >
+                      gray
+                    </div>
+                  </div>
+                </div>
+                <div class="relative">
+                  <div
+                    class="group/item cursor-pointer relative inline-block border-b w-[20px] h-[20px] rounded-full bg-red-700 text-center"
+                  >
+                    <div
+                      class="opacity-0 bg-black font-medium text-white text-center text-xs rounded-lg py-2 absolute z-10 group-hover/item:opacity-100 bottom-full -left-1/2 px-3 pointer-events-none"
+                    >
+                      Red
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="text-[24px] text-gray-700">
+                <i class="fa-solid fa-code-compare"></i>
+              </p>
+            </div>
+          </div>
+          <div class="cart-body pt-2">
+            <a href="">
+              <h1 class="text-[18px] text-center pt-2 text-gray-900">
+                Nerd wooden chair
+              </h1>
+            </a>
+            <span class="text-[13px] block font-light text-gray-800 text-center"
+              >Furniture</span
+            >
+            <p class="text-center text-[18px] font-medium py-1">
+              <span class="text-gray-800"> $799.00</span>
+              <span class="text-primary">$599.00</span>
+            </p>
+          </div>
+        </div>
+        <div>
+          <div
+            class="cart-image group cursor-pointer w-full h-[350px] relative"
+          >
+            <img
+              class="h-full w-full"
+              src="https://woodmart.b-cdn.net/wp-content/uploads/2016/09/product-furniture-1.jpg"
+              alt=""
+            />
+            <div
+              class="bg-white opacity-0 group-hover:opacity-100 duration-500 transition-all translate-x-0 w-[70px] flex justify-center items-center absolute top-4 right-4 py-4"
+            >
+              <div class="space-y-2">
+                <div class="text-[20px] cursor-pointer">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="text-[20px] cursor-pointer">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <div class="text-[20px] cursor-pointer">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-white opacity-0 group-hover:translate-y-0 translate-y-5 group-hover:opacity-100 duration-500 p-3 border-b border-gray-400 flex justify-between items-center gap-4 absolute bottom-0 w-full"
+            >
+              <div class="flex items-center gap-2">
+                <div class="relative">
+                  <div
+                    class="group/item cursor-pointer relative inline-block border-b border-gray-400 w-[20px] h-[20px] rounded-full bg-black text-center"
+                  >
+                    <div
+                      class="opacity-0 bg-black font-medium text-white text-center text-xs rounded-lg py-2 absolute z-10 group-hover/item:opacity-100 bottom-full -left-1/2 px-3 pointer-events-none"
+                    >
+                      Black
+                    </div>
+                  </div>
+                </div>
+                <div class="relative">
+                  <div
+                    class="group/item cursor-pointer relative inline-block border-b border-gray-400 w-[20px] h-[20px] rounded-full bg-gray-700 text-center"
+                  >
+                    <div
+                      class="opacity-0 bg-black font-medium text-white text-center text-xs rounded-lg py-2 absolute z-10 group-hover/item:opacity-100 bottom-full -left-1/2 px-3 pointer-events-none"
+                    >
+                      gray
+                    </div>
+                  </div>
+                </div>
+                <div class="relative">
+                  <div
+                    class="group/item cursor-pointer relative inline-block border-b w-[20px] h-[20px] rounded-full bg-red-700 text-center"
+                  >
+                    <div
+                      class="opacity-0 bg-black font-medium text-white text-center text-xs rounded-lg py-2 absolute z-10 group-hover/item:opacity-100 bottom-full -left-1/2 px-3 pointer-events-none"
+                    >
+                      Red
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="text-[24px] text-gray-700">
+                <i class="fa-solid fa-code-compare"></i>
+              </p>
+            </div>
+          </div>
+          <div class="cart-body pt-2">
+            <a href="">
+              <h1 class="text-[18px] text-center pt-2 text-gray-900">
+                Nerd wooden chair
+              </h1>
+            </a>
+            <span class="text-[13px] block font-light text-gray-800 text-center"
+              >Furniture</span
+            >
+            <p class="text-center text-[18px] font-medium py-1">
+              <span class="text-gray-800"> $799.00</span>
+              <span class="text-primary">$599.00</span>
+            </p>
+          </div>
+        </div>
+        <div>
+          <div
+            class="cart-image group cursor-pointer w-full h-[350px] relative"
+          >
+            <img
+              class="h-full w-full"
+              src="https://woodmart.b-cdn.net/wp-content/uploads/2016/09/product-furniture-1.jpg"
+              alt=""
+            />
+            <div
+              class="bg-white opacity-0 group-hover:opacity-100 duration-500 transition-all translate-x-0 w-[70px] flex justify-center items-center absolute top-4 right-4 py-4"
+            >
+              <div class="space-y-2">
+                <div class="text-[20px] cursor-pointer">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="text-[20px] cursor-pointer">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <div class="text-[20px] cursor-pointer">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-white opacity-0 group-hover:translate-y-0 translate-y-5 group-hover:opacity-100 duration-500 p-3 border-b border-gray-400 flex justify-between items-center gap-4 absolute bottom-0 w-full"
+            >
+              <div class="flex items-center gap-2">
+                <div class="relative">
+                  <div
+                    class="group/item cursor-pointer relative inline-block border-b border-gray-400 w-[20px] h-[20px] rounded-full bg-black text-center"
+                  >
+                    <div
+                      class="opacity-0 bg-black font-medium text-white text-center text-xs rounded-lg py-2 absolute z-10 group-hover/item:opacity-100 bottom-full -left-1/2 px-3 pointer-events-none"
+                    >
+                      Black
+                    </div>
+                  </div>
+                </div>
+                <div class="relative">
+                  <div
+                    class="group/item cursor-pointer relative inline-block border-b border-gray-400 w-[20px] h-[20px] rounded-full bg-gray-700 text-center"
+                  >
+                    <div
+                      class="opacity-0 bg-black font-medium text-white text-center text-xs rounded-lg py-2 absolute z-10 group-hover/item:opacity-100 bottom-full -left-1/2 px-3 pointer-events-none"
+                    >
+                      gray
+                    </div>
+                  </div>
+                </div>
+                <div class="relative">
+                  <div
+                    class="group/item cursor-pointer relative inline-block border-b w-[20px] h-[20px] rounded-full bg-red-700 text-center"
+                  >
+                    <div
+                      class="opacity-0 bg-black font-medium text-white text-center text-xs rounded-lg py-2 absolute z-10 group-hover/item:opacity-100 bottom-full -left-1/2 px-3 pointer-events-none"
+                    >
+                      Red
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="text-[24px] text-gray-700">
+                <i class="fa-solid fa-code-compare"></i>
+              </p>
+            </div>
+          </div>
+          <div class="cart-body pt-2">
+            <a href="">
+              <h1 class="text-[18px] text-center pt-2 text-gray-900">
+                Nerd wooden chair
+              </h1>
+            </a>
+            <span class="text-[13px] block font-light text-gray-800 text-center"
+              >Furniture</span
+            >
+            <p class="text-center text-[18px] font-medium py-1">
+              <span class="text-gray-800"> $799.00</span>
+              <span class="text-primary">$599.00</span>
+            </p>
+          </div>
+        </div>
+        <div>
+          <div
+            class="cart-image group cursor-pointer w-full h-[350px] relative"
+          >
+            <img
+              class="h-full w-full"
+              src="https://woodmart.b-cdn.net/wp-content/uploads/2016/09/product-furniture-1.jpg"
+              alt=""
+            />
+            <div
+              class="bg-white opacity-0 group-hover:opacity-100 duration-500 transition-all translate-x-0 w-[70px] flex justify-center items-center absolute top-4 right-4 py-4"
+            >
+              <div class="space-y-2">
+                <div class="text-[20px] cursor-pointer">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="text-[20px] cursor-pointer">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <div class="text-[20px] cursor-pointer">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-white opacity-0 group-hover:translate-y-0 translate-y-5 group-hover:opacity-100 duration-500 p-3 border-b border-gray-400 flex justify-between items-center gap-4 absolute bottom-0 w-full"
+            >
+              <div class="flex items-center gap-2">
+                <div class="relative">
+                  <div
+                    class="group/item cursor-pointer relative inline-block border-b border-gray-400 w-[20px] h-[20px] rounded-full bg-black text-center"
+                  >
+                    <div
+                      class="opacity-0 bg-black font-medium text-white text-center text-xs rounded-lg py-2 absolute z-10 group-hover/item:opacity-100 bottom-full -left-1/2 px-3 pointer-events-none"
+                    >
+                      Black
+                    </div>
+                  </div>
+                </div>
+                <div class="relative">
+                  <div
+                    class="group/item cursor-pointer relative inline-block border-b border-gray-400 w-[20px] h-[20px] rounded-full bg-gray-700 text-center"
+                  >
+                    <div
+                      class="opacity-0 bg-black font-medium text-white text-center text-xs rounded-lg py-2 absolute z-10 group-hover/item:opacity-100 bottom-full -left-1/2 px-3 pointer-events-none"
+                    >
+                      gray
+                    </div>
+                  </div>
+                </div>
+                <div class="relative">
+                  <div
+                    class="group/item cursor-pointer relative inline-block border-b w-[20px] h-[20px] rounded-full bg-red-700 text-center"
+                  >
+                    <div
+                      class="opacity-0 bg-black font-medium text-white text-center text-xs rounded-lg py-2 absolute z-10 group-hover/item:opacity-100 bottom-full -left-1/2 px-3 pointer-events-none"
+                    >
+                      Red
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="text-[24px] text-gray-700">
+                <i class="fa-solid fa-code-compare"></i>
+              </p>
+            </div>
+          </div>
+          <div class="cart-body pt-2">
+            <a href="">
+              <h1 class="text-[18px] text-center pt-2 text-gray-900">
+                Nerd wooden chair
+              </h1>
+            </a>
+            <span class="text-[13px] block font-light text-gray-800 text-center"
+              >Furniture</span
+            >
+            <p class="text-center text-[18px] font-medium py-1">
+              <span class="text-gray-800"> $799.00</span>
+              <span class="text-primary">$599.00</span>
+            </p>
+          </div>
+        </div>
+        <div>
+          <div
+            class="cart-image group cursor-pointer w-full h-[350px] relative"
+          >
+            <img
+              class="h-full w-full"
+              src="https://woodmart.b-cdn.net/wp-content/uploads/2016/09/product-furniture-1.jpg"
+              alt=""
+            />
+            <div
+              class="bg-white opacity-0 group-hover:opacity-100 duration-500 transition-all translate-x-0 w-[70px] flex justify-center items-center absolute top-4 right-4 py-4"
+            >
+              <div class="space-y-2">
+                <div class="text-[20px] cursor-pointer">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="text-[20px] cursor-pointer">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <div class="text-[20px] cursor-pointer">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-white opacity-0 group-hover:translate-y-0 translate-y-5 group-hover:opacity-100 duration-500 p-3 border-b border-gray-400 flex justify-between items-center gap-4 absolute bottom-0 w-full"
+            >
+              <div class="flex items-center gap-2">
+                <div class="relative">
+                  <div
+                    class="group/item cursor-pointer relative inline-block border-b border-gray-400 w-[20px] h-[20px] rounded-full bg-black text-center"
+                  >
+                    <div
+                      class="opacity-0 bg-black font-medium text-white text-center text-xs rounded-lg py-2 absolute z-10 group-hover/item:opacity-100 bottom-full -left-1/2 px-3 pointer-events-none"
+                    >
+                      Black
+                    </div>
+                  </div>
+                </div>
+                <div class="relative">
+                  <div
+                    class="group/item cursor-pointer relative inline-block border-b border-gray-400 w-[20px] h-[20px] rounded-full bg-gray-700 text-center"
+                  >
+                    <div
+                      class="opacity-0 bg-black font-medium text-white text-center text-xs rounded-lg py-2 absolute z-10 group-hover/item:opacity-100 bottom-full -left-1/2 px-3 pointer-events-none"
+                    >
+                      gray
+                    </div>
+                  </div>
+                </div>
+                <div class="relative">
+                  <div
+                    class="group/item cursor-pointer relative inline-block border-b w-[20px] h-[20px] rounded-full bg-red-700 text-center"
+                  >
+                    <div
+                      class="opacity-0 bg-black font-medium text-white text-center text-xs rounded-lg py-2 absolute z-10 group-hover/item:opacity-100 bottom-full -left-1/2 px-3 pointer-events-none"
+                    >
+                      Red
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="text-[24px] text-gray-700">
+                <i class="fa-solid fa-code-compare"></i>
+              </p>
+            </div>
+          </div>
+          <div class="cart-body pt-2">
+            <a href="">
+              <h1 class="text-[18px] text-center pt-2 text-gray-900">
+                Nerd wooden chair
+              </h1>
+            </a>
+            <span class="text-[13px] block font-light text-gray-800 text-center"
+              >Furniture</span
+            >
+            <p class="text-center text-[18px] font-medium py-1">
+              <span class="text-gray-800"> $799.00</span>
+              <span class="text-primary">$599.00</span>
+            </p>
+          </div>
+        </div>
+        <div>
+          <div
+            class="cart-image group cursor-pointer w-full h-[350px] relative"
+          >
+            <img
+              class="h-full w-full"
+              src="https://woodmart.b-cdn.net/wp-content/uploads/2016/09/product-furniture-1.jpg"
+              alt=""
+            />
+            <div
+              class="bg-white opacity-0 group-hover:opacity-100 duration-500 transition-all translate-x-0 w-[70px] flex justify-center items-center absolute top-4 right-4 py-4"
+            >
+              <div class="space-y-2">
+                <div class="text-[20px] cursor-pointer">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="text-[20px] cursor-pointer">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <div class="text-[20px] cursor-pointer">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-white opacity-0 group-hover:translate-y-0 translate-y-5 group-hover:opacity-100 duration-500 p-3 border-b border-gray-400 flex justify-between items-center gap-4 absolute bottom-0 w-full"
+            >
+              <div class="flex items-center gap-2">
+                <div class="relative">
+                  <div
+                    class="group/item cursor-pointer relative inline-block border-b border-gray-400 w-[20px] h-[20px] rounded-full bg-black text-center"
+                  >
+                    <div
+                      class="opacity-0 bg-black font-medium text-white text-center text-xs rounded-lg py-2 absolute z-10 group-hover/item:opacity-100 bottom-full -left-1/2 px-3 pointer-events-none"
+                    >
+                      Black
+                    </div>
+                  </div>
+                </div>
+                <div class="relative">
+                  <div
+                    class="group/item cursor-pointer relative inline-block border-b border-gray-400 w-[20px] h-[20px] rounded-full bg-gray-700 text-center"
+                  >
+                    <div
+                      class="opacity-0 bg-black font-medium text-white text-center text-xs rounded-lg py-2 absolute z-10 group-hover/item:opacity-100 bottom-full -left-1/2 px-3 pointer-events-none"
+                    >
+                      gray
+                    </div>
+                  </div>
+                </div>
+                <div class="relative">
+                  <div
+                    class="group/item cursor-pointer relative inline-block border-b w-[20px] h-[20px] rounded-full bg-red-700 text-center"
+                  >
+                    <div
+                      class="opacity-0 bg-black font-medium text-white text-center text-xs rounded-lg py-2 absolute z-10 group-hover/item:opacity-100 bottom-full -left-1/2 px-3 pointer-events-none"
+                    >
+                      Red
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="text-[24px] text-gray-700">
+                <i class="fa-solid fa-code-compare"></i>
+              </p>
+            </div>
+          </div>
+          <div class="cart-body pt-2">
+            <a href="">
+              <h1 class="text-[18px] text-center pt-2 text-gray-900">
+                Nerd wooden chair
+              </h1>
+            </a>
+            <span class="text-[13px] block font-light text-gray-800 text-center"
+              >Furniture</span
+            >
+            <p class="text-center text-[18px] font-medium py-1">
+              <span class="text-gray-800"> $799.00</span>
+              <span class="text-primary">$599.00</span>
+            </p>
+          </div>
+        </div>
+        <div>
+          <div
+            class="cart-image group cursor-pointer w-full h-[350px] relative"
+          >
+            <img
+              class="h-full w-full"
+              src="https://woodmart.b-cdn.net/wp-content/uploads/2016/09/product-furniture-1.jpg"
+              alt=""
+            />
+            <div
+              class="bg-white opacity-0 group-hover:opacity-100 duration-500 transition-all translate-x-0 w-[70px] flex justify-center items-center absolute top-4 right-4 py-4"
+            >
+              <div class="space-y-2">
+                <div class="text-[20px] cursor-pointer">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="text-[20px] cursor-pointer">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <div class="text-[20px] cursor-pointer">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-white opacity-0 group-hover:translate-y-0 translate-y-5 group-hover:opacity-100 duration-500 p-3 border-b border-gray-400 flex justify-between items-center gap-4 absolute bottom-0 w-full"
+            >
+              <div class="flex items-center gap-2">
+                <div class="relative">
+                  <div
+                    class="group/item cursor-pointer relative inline-block border-b border-gray-400 w-[20px] h-[20px] rounded-full bg-black text-center"
+                  >
+                    <div
+                      class="opacity-0 bg-black font-medium text-white text-center text-xs rounded-lg py-2 absolute z-10 group-hover/item:opacity-100 bottom-full -left-1/2 px-3 pointer-events-none"
+                    >
+                      Black
+                    </div>
+                  </div>
+                </div>
+                <div class="relative">
+                  <div
+                    class="group/item cursor-pointer relative inline-block border-b border-gray-400 w-[20px] h-[20px] rounded-full bg-gray-700 text-center"
+                  >
+                    <div
+                      class="opacity-0 bg-black font-medium text-white text-center text-xs rounded-lg py-2 absolute z-10 group-hover/item:opacity-100 bottom-full -left-1/2 px-3 pointer-events-none"
+                    >
+                      gray
+                    </div>
+                  </div>
+                </div>
+                <div class="relative">
+                  <div
+                    class="group/item cursor-pointer relative inline-block border-b w-[20px] h-[20px] rounded-full bg-red-700 text-center"
+                  >
+                    <div
+                      class="opacity-0 bg-black font-medium text-white text-center text-xs rounded-lg py-2 absolute z-10 group-hover/item:opacity-100 bottom-full -left-1/2 px-3 pointer-events-none"
+                    >
+                      Red
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="text-[24px] text-gray-700">
+                <i class="fa-solid fa-code-compare"></i>
+              </p>
+            </div>
+          </div>
+          <div class="cart-body pt-2">
+            <a href="">
+              <h1 class="text-[18px] text-center pt-2 text-gray-900">
+                Nerd wooden chair
+              </h1>
+            </a>
+            <span class="text-[13px] block font-light text-gray-800 text-center"
+              >Furniture</span
+            >
+            <p class="text-center text-[18px] font-medium py-1">
+              <span class="text-gray-800"> $799.00</span>
+              <span class="text-primary">$599.00</span>
+            </p>
+          </div>
+        </div>
+        <div>
+          <div
+            class="cart-image group cursor-pointer w-full h-[350px] relative"
+          >
+            <img
+              class="h-full w-full"
+              src="https://woodmart.b-cdn.net/wp-content/uploads/2016/09/product-furniture-1.jpg"
+              alt=""
+            />
+            <div
+              class="bg-white opacity-0 group-hover:opacity-100 duration-500 transition-all translate-x-0 w-[70px] flex justify-center items-center absolute top-4 right-4 py-4"
+            >
+              <div class="space-y-2">
+                <div class="text-[20px] cursor-pointer">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="text-[20px] cursor-pointer">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <div class="text-[20px] cursor-pointer">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-white opacity-0 group-hover:translate-y-0 translate-y-5 group-hover:opacity-100 duration-500 p-3 border-b border-gray-400 flex justify-between items-center gap-4 absolute bottom-0 w-full"
+            >
+              <div class="flex items-center gap-2">
+                <div class="relative">
+                  <div
+                    class="group/item cursor-pointer relative inline-block border-b border-gray-400 w-[20px] h-[20px] rounded-full bg-black text-center"
+                  >
+                    <div
+                      class="opacity-0 bg-black font-medium text-white text-center text-xs rounded-lg py-2 absolute z-10 group-hover/item:opacity-100 bottom-full -left-1/2 px-3 pointer-events-none"
+                    >
+                      Black
+                    </div>
+                  </div>
+                </div>
+                <div class="relative">
+                  <div
+                    class="group/item cursor-pointer relative inline-block border-b border-gray-400 w-[20px] h-[20px] rounded-full bg-gray-700 text-center"
+                  >
+                    <div
+                      class="opacity-0 bg-black font-medium text-white text-center text-xs rounded-lg py-2 absolute z-10 group-hover/item:opacity-100 bottom-full -left-1/2 px-3 pointer-events-none"
+                    >
+                      gray
+                    </div>
+                  </div>
+                </div>
+                <div class="relative">
+                  <div
+                    class="group/item cursor-pointer relative inline-block border-b w-[20px] h-[20px] rounded-full bg-red-700 text-center"
+                  >
+                    <div
+                      class="opacity-0 bg-black font-medium text-white text-center text-xs rounded-lg py-2 absolute z-10 group-hover/item:opacity-100 bottom-full -left-1/2 px-3 pointer-events-none"
+                    >
+                      Red
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="text-[24px] text-gray-700">
+                <i class="fa-solid fa-code-compare"></i>
+              </p>
+            </div>
+          </div>
+          <div class="cart-body pt-2">
+            <a href="">
+              <h1 class="text-[18px] text-center pt-2 text-gray-900">
+                Nerd wooden chair
+              </h1>
+            </a>
+            <span class="text-[13px] block font-light text-gray-800 text-center"
+              >Furniture</span
+            >
+            <p class="text-center text-[18px] font-medium py-1">
+              <span class="text-gray-800"> $799.00</span>
+              <span class="text-primary">$599.00</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- brand slider  -->
+    <div class="bg-secondary py-6">
+      <div class="container">
+        <div class="brandSlider">
+          <a
+            href=""
+            class="opacity-70 hover:opacity-100 duration-500 p-6 cursor-pointer"
+          >
+            <img
+              class="h-[50px]"
+              src="https://woodmart.b-cdn.net/wp-content/uploads/2016/09/brand-Magisso.png"
+              alt="image"
+            />
+          </a>
+          <a
+            href=""
+            class="opacity-70 hover:opacity-100 duration-500 p-6 cursor-pointer"
+          >
+            <img
+              class="h-[50px]"
+              src="https://woodmart.b-cdn.net/wp-content/uploads/2016/09/brand-Louis-Poulsen.png.webp"
+              alt="image"
+            />
+          </a>
+          <a
+            href=""
+            class="opacity-70 hover:opacity-100 duration-500 p-6 cursor-pointer"
+          >
+            <img
+              class="h-[50px]"
+              src="https://woodmart.b-cdn.net/wp-content/uploads/2016/09/brand-Louis-Poulsen.png.webp"
+              alt="image"
+            />
+          </a>
+          <a
+            href=""
+            class="opacity-70 hover:opacity-100 duration-500 p-6 cursor-pointer"
+          >
+            <img
+              class="h-[50px]"
+              src="https://woodmart.b-cdn.net/wp-content/uploads/2017/01/klobe2r.png"
+              alt="image"
+            />
+          </a>
+          <a
+            href=""
+            class="opacity-70 hover:opacity-100 duration-500 p-6 cursor-pointer"
+          >
+            <img
+              class="h-[50px]"
+              src="https://woodmart.b-cdn.net/wp-content/uploads/2017/01/nichemodern.png"
+              alt="image"
+            />
+          </a>
+          <a
+            href=""
+            class="opacity-70 hover:opacity-100 duration-500 p-6 cursor-pointer"
+          >
+            <img
+              class="h-[50px]"
+              src="https://woodmart.b-cdn.net/wp-content/uploads/2016/09/brand-Rosenthal.png.webp"
+              alt="image"
+            />
+          </a>
+          <a
+            href=""
+            class="opacity-70 hover:opacity-100 duration-500 p-6 cursor-pointer"
+          >
+            <img
+              class="h-[50px]"
+              src="https://woodmart.b-cdn.net/wp-content/uploads/2016/09/brand-witra.png"
+              alt="image"
+            />
+          </a>
+          <a
+            href=""
+            class="opacity-70 hover:opacity-100 duration-500 p-6 cursor-pointer"
+          >
+            <img
+              class="h-[50px]"
+              src="https://woodmart.b-cdn.net/wp-content/uploads/2016/09/brand-PackIt.png"
+              alt="image"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+
     <!-- footer section  -->
     <footer class="border-b border-gray-200 py-10">
       <div class="container">
@@ -1495,6 +2555,8 @@
       </div>
     </div>
     <!-- script links  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
       integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
